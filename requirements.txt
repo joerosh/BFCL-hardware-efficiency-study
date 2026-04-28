@@ -6,4 +6,6 @@ seaborn
 requests
 transformers
 accelerate
-vllm
+datasets
+huggingface_hub
+# vllm

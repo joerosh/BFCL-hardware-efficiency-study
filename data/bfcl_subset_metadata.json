@@ -1,0 +1,14 @@
+{
+  "dataset_version": "BFCL_v3",
+  "random_seed": 188,
+  "target_n": 100,
+  "actual_n": 100,
+  "n_per_category": 25,
+  "categories": {
+    "simple": 25,
+    "multiple": 25,
+    "parallel": 25,
+    "parallel_multiple": 25
+  },
+  "notes": "Stratified BFCL v3 subset for hardware-aware inference experiments."
+}
