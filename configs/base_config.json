@@ -1,8 +1,10 @@
 {
   "model_name": "Qwen/Qwen2.5-7B-Instruct",
-  "temperature": 0,
+  "temperature": 0.0,
   "max_new_tokens": 256,
   "batch_size": 1,
   "num_repeats": 1,
-  "device": "auto"
+  "device": "cuda",
+  "dtype": "auto",
+  "backend": "transformers"
 }

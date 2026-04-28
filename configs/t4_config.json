@@ -1,5 +1,5 @@
 {
+  "hardware": "T4",
   "inherits": "base_config.json",
-  "device": "cuda",
   "batch_size": 1
 }

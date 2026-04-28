@@ -1,0 +1,5 @@
+{
+  "hardware": "RTX6000Ada",
+  "inherits": "base_config.json",
+  "batch_size": 1
+}

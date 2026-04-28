@@ -1,0 +1,5 @@
+{
+  "hardware": "L4",
+  "inherits": "base_config.json",
+  "batch_size": 1
+}

@@ -8,4 +8,8 @@ transformers
 accelerate
 datasets
 huggingface_hub
+torch
+transformers
+accelerate
+psutil
 # vllm
