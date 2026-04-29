@@ -1,0 +1,7 @@
+{
+  "hardware": "T4_Llama",
+  "inherits": "base_config.json",
+  "backend": "transformers_gpu",
+  "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+  "load_in_8bit": true
+}

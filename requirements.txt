@@ -12,4 +12,7 @@ torch
 transformers
 accelerate
 psutil
+openai
+python-dotenv
+bitsandbytes
 # vllm

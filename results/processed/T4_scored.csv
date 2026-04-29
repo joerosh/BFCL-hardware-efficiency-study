@@ -1,0 +1,583 @@
+task_id,category,hardware,model,backend,run_index,raw_output,latency_s,input_tokens,output_tokens,tokens_per_second,peak_memory_mb,error,timestamp,correct,score_reason,parsed_calls,gold_calls,failure_type
+simple_361,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""restaurant_finder"", ""arguments"": {""city"": ""New York"", ""cuisine"": ""Italian"", ""diet"": ""Gluten-free""}}
+</tool_call>",34.944954185999904,257,36,1.030191649655182,13219.12744140625,,2026-04-28T22:39:19.708422,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""restaurant_finder"", ""arguments"": {""city"": ""New York"", ""cuisine"": ""Italian"", ""diet"": ""Gluten-free""}}]","[{""name"": ""restaurant_finder"", ""arguments"": {""city"": [""New York City"", ""New York City, NY"", ""NYC"", ""New York""], ""cuisine"": [""Italian""], ""diet"": [""Gluten-free""]}}]",correct
+simple_113,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""probability.dice_roll"", ""arguments"": {""desired_number"": 6, ""number_of_rolls"": 2, ""die_sides"": 6}}
+</tool_call>",27.598999557000298,269,40,1.4493278974619308,13220.00244140625,,2026-04-28T22:39:54.665027,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""probability.dice_roll"", ""arguments"": {""desired_number"": 6, ""number_of_rolls"": 2, ""die_sides"": 6}}]","[{""name"": ""probability.dice_roll"", ""arguments"": {""desired_number"": [6], ""number_of_rolls"": [2], ""die_sides"": [6, """"]}}]",correct
+simple_135,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_return_on_investment"", ""arguments"": {""purchase_price"": 20, ""sale_price"": 25, ""dividend"": 2}}
+</tool_call>",27.1285613379996,267,40,1.4744607906638632,13219.89306640625,,2026-04-28T22:40:22.269049,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_return_on_investment"", ""arguments"": {""purchase_price"": 20, ""sale_price"": 25, ""dividend"": 2}}]","[{""name"": ""calculate_return_on_investment"", ""arguments"": {""purchase_price"": [20], ""sale_price"": [25], ""dividend"": [2]}}]",correct
+simple_1,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 5}}
+</tool_call>",14.107095484000183,179,21,1.488612593840988,13214.03857421875,,2026-04-28T22:40:49.400034,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""math.factorial"", ""arguments"": {""number"": 5}}]","[{""name"": ""math.factorial"", ""arguments"": {""number"": [5]}}]",correct
+simple_123,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""hypothesis_testing.two_sample_t_test"", ""arguments"": {""group1"": [12.4, 15.6, 11.2, 18.9], ""group2"": [10.5, 9.8, 15.2, 13.8], ""alpha"": 0.05}}
+</tool_call>",61.86466137799971,349,84,1.357802631242916,13226.78662109375,,2026-04-28T22:41:03.509655,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""hypothesis_testing.two_sample_t_test"", ""arguments"": {""group1"": [12.4, 15.6, 11.2, 18.9], ""group2"": [10.5, 9.8, 15.2, 13.8], ""alpha"": 0.05}}]","[{""name"": ""hypothesis_testing.two_sample_t_test"", ""arguments"": {""group1"": [[12.4, 15.6, 11.2, 18.9]], ""group2"": [[10.5, 9.8, 15.2, 13.8]], ""alpha"": [0.05, """"]}}]",correct
+simple_36,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_shortest_driving_distance"", ""arguments"": {""origin"": ""New York City"", ""destination"": ""Washington D.C.""}}
+</tool_call>",23.88904654399994,253,35,1.4651066100748473,13218.85302734375,,2026-04-28T22:42:05.377647,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_shortest_driving_distance"", ""arguments"": {""origin"": ""New York City"", ""destination"": ""Washington D.C.""}}]","[{""name"": ""get_shortest_driving_distance"", ""arguments"": {""origin"": [""New York City""], ""destination"": [""Washington D.C.""], ""unit"": [""km"", """"]}}]",correct
+simple_353,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""find_recipes"", ""arguments"": {""diet"": ""gluten-free"", ""meal_type"": ""dinner""}}
+</tool_call>",21.168785629000013,266,31,1.464420328274844,13219.34619140625,,2026-04-28T22:42:29.269306,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_recipes"", ""arguments"": {""diet"": ""gluten-free"", ""meal_type"": ""dinner""}}]","[{""name"": ""find_recipes"", ""arguments"": {""diet"": [""gluten-free""], ""meal_type"": [""dinner""], ""ingredients"": [""""]}}]",correct
+simple_137,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_stock_return"", ""arguments"": {""investment_amount"": 5000, ""annual_growth_rate"": 0.06, ""holding_period"": 5}}
+</tool_call>",29.15565857899992,313,43,1.4748423495043879,13222.57373046875,,2026-04-28T22:42:50.440537,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_stock_return"", ""arguments"": {""investment_amount"": 5000, ""annual_growth_rate"": 0.06, ""holding_period"": 5}}]","[{""name"": ""calculate_stock_return"", ""arguments"": {""investment_amount"": [5000], ""annual_growth_rate"": [0.06], ""holding_period"": [5], ""dividends"": ["""", false]}}]",correct
+simple_200,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_emissions"", ""arguments"": {""distance"": 12000, ""fuel_type"": ""gas"", ""fuel_efficiency"": 25}}
+</tool_call>",27.889397154000108,311,41,1.4700927299936086,13222.35498046875,,2026-04-28T22:43:19.598899,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_emissions"", ""arguments"": {""distance"": 12000, ""fuel_type"": ""gas"", ""fuel_efficiency"": 25}}]","[{""name"": ""calculate_emissions"", ""arguments"": {""distance"": [12000], ""fuel_type"": [""gas""], ""fuel_efficiency"": ["""", 25.0], ""efficiency_reduction"": [0, """"]}}]",correct
+simple_179,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""find_latest_court_case"", ""arguments"": {""company1"": ""Apple"", ""company2"": ""Samsung"", ""country"": ""USA""}}
+</tool_call>",25.022473225999875,240,37,1.47867077989536,13218.25146484375,,2026-04-28T22:43:47.491096,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_latest_court_case"", ""arguments"": {""company1"": ""Apple"", ""company2"": ""Samsung"", ""country"": ""USA""}}]","[{""name"": ""find_latest_court_case"", ""arguments"": {""company1"": [""Apple""], ""company2"": [""Samsung""], ""country"": [""USA"", """"]}}]",correct
+simple_153,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_compounded_interest"", ""arguments"": {""principal"": 5000, ""rate"": 0.03, ""time"": 5, ""n"": 4}}
+</tool_call>",31.232925283999975,304,46,1.472804727118049,13222.24560546875,,2026-04-28T22:44:12.516137,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_compounded_interest"", ""arguments"": {""principal"": 5000, ""rate"": 0.03, ""time"": 5, ""n"": 4}}]","[{""name"": ""calculate_compounded_interest"", ""arguments"": {""principal"": [5000], ""rate"": [0.03], ""time"": [5], ""n"": [4]}}]",correct
+simple_136,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""compound_interest"", ""arguments"": {""principal"": 10000, ""annual_rate"": 5, ""compounding_freq"": ""monthly"", ""time_in_years"": 5}}
+</tool_call>",31.668037180999818,309,47,1.4841462933547094,13222.57373046875,,2026-04-28T22:44:43.751887,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""compound_interest"", ""arguments"": {""principal"": 10000, ""annual_rate"": 5, ""compounding_freq"": ""monthly"", ""time_in_years"": 5}}]","[{""name"": ""compound_interest"", ""arguments"": {""principal"": [10000], ""annual_rate"": [5.0], ""compounding_freq"": [""monthly""], ""time_in_years"": [5]}}]",correct
+simple_58,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP synthase"", ""organelle"": ""mitochondria"", ""specific_function"": true}}
+</tool_call>",28.996039892000226,259,43,1.482961127111132,13219.61962890625,,2026-04-28T22:45:15.423152,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP synthase"", ""organelle"": ""mitochondria"", ""specific_function"": true}}]","[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": [""ATP synthase""], ""organelle"": [""mitochondria""], ""specific_function"": [true]}}]",correct
+simple_55,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""biology.get_cell_info"", ""arguments"": {""cell_type"": ""human"", ""detailed"": true}}
+</tool_call>",19.325382660000287,218,29,1.5006171163701847,13216.60986328125,,2026-04-28T22:45:44.422537,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""biology.get_cell_info"", ""arguments"": {""cell_type"": ""human"", ""detailed"": true}}]","[{""name"": ""biology.get_cell_info"", ""arguments"": {""cell_type"": [""human""], ""detailed"": [true]}}]",correct
+simple_13,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_area_under_curve"", ""arguments"": {""function"": ""x**2"", ""interval"": [1, 3], ""method"": ""trapezoidal""}}
+</tool_call>",28.55495169599999,273,42,1.470848224403875,13220.33056640625,,2026-04-28T22:46:03.750221,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_area_under_curve"", ""arguments"": {""function"": ""x**2"", ""interval"": [1, 3], ""method"": ""trapezoidal""}}]","[{""name"": ""calculate_area_under_curve"", ""arguments"": {""function"": [""x**2"", ""lambda x: x**2"", ""y=x**2""], ""interval"": [[1.0, 3.0]], ""method"": ["""", ""trapezoidal""]}}]",correct
+simple_354,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_vegan_recipe"", ""arguments"": {""dish_type"": ""soup"", ""cooking_time"": 30}}
+</tool_call>",21.720955453999977,289,32,1.4732316940554797,13220.65869140625,,2026-04-28T22:46:32.307690,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_vegan_recipe"", ""arguments"": {""dish_type"": ""soup"", ""cooking_time"": 30}}]","[{""name"": ""get_vegan_recipe"", ""arguments"": {""dish_type"": [""soup""], ""cooking_time"": [30], ""ingredient_preference"": [""""]}}]",correct
+simple_260,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""paint_requirement.calculate"", ""arguments"": {""area"": {""width"": 20, ""height"": 12}, ""paint_coverage"": 350, ""exclusion"": {""type"": ""window"", ""area"": 15}}}
+</tool_call>",40.45180313699984,410,60,1.4832466131805162,13228.81201171875,,2026-04-28T22:46:54.031384,False,"argument_mismatch: Argument mismatch for 'area': predicted {'width': 20, 'height': 12}, gold [{'width': [20], 'height': [12]}].","[{""name"": ""paint_requirement.calculate"", ""arguments"": {""area"": {""width"": 20, ""height"": 12}, ""paint_coverage"": 350, ""exclusion"": {""type"": ""window"", ""area"": 15}}}]","[{""name"": ""paint_requirement.calculate"", ""arguments"": {""area"": [{""width"": [20], ""height"": [12]}], ""paint_coverage"": [350], ""exclusion"": [{""type"": [""window""], ""area"": [15]}]}}]",argument_mismatch
+simple_367,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""dessert"", ""time"": 30}}
+</tool_call>",26.202041566999924,267,39,1.4884336359926404,13219.83837890625,,2026-04-28T22:47:34.487214,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""dessert"", ""time"": 30}}]","[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": [""vegan""], ""recipe_type"": [""dessert""], ""time"": [30]}}]",correct
+simple_255,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""religious_history.get_papal_biography"", ""arguments"": {""papal_name"": ""Innocent III"", ""include_contributions"": true}}
+</tool_call>",26.047682933000033,239,39,1.4972540974303157,13218.30615234375,,2026-04-28T22:48:00.691729,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""religious_history.get_papal_biography"", ""arguments"": {""papal_name"": ""Innocent III"", ""include_contributions"": true}}]","[{""name"": ""religious_history.get_papal_biography"", ""arguments"": {""papal_name"": [""Innocent III"", ""Pope Innocent III""], ""include_contributions"": [true]}}]",correct
+simple_242,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_scientist_for_discovery"", ""arguments"": {""discovery"": ""theory of evolution""}}
+</tool_call>",18.64139539200005,191,28,1.5020334803915052,13215.07763671875,,2026-04-28T22:48:26.741924,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_scientist_for_discovery"", ""arguments"": {""discovery"": ""theory of evolution""}}]","[{""name"": ""get_scientist_for_discovery"", ""arguments"": {""discovery"": [""Theory of Evolution"", ""theory of evolution""]}}]",correct
+simple_176,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2010, ""case_type"": ""Patent""}}
+</tool_call>",27.52804215099968,257,41,1.4893903378635696,13219.40087890625,,2026-04-28T22:48:45.385765,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2010, ""case_type"": ""Patent""}}]","[{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": [""Apple Inc.""], ""year"": [2010], ""case_type"": [""Patent"", ""IPR""]}}]",correct
+simple_57,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_cell_density"", ""arguments"": {""optical_density"": 0.6, ""dilution"": 5}}
+</tool_call>",22.220408935999785,288,33,1.485121182740069,13220.65869140625,,2026-04-28T22:49:12.916802,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_cell_density"", ""arguments"": {""optical_density"": 0.6, ""dilution"": 5}}]","[{""name"": ""calculate_cell_density"", ""arguments"": {""optical_density"": [0.6], ""dilution"": [5], ""calibration_factor"": [1000000000.0, """"]}}]",correct
+simple_126,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""linear_regression.get_r_squared"", ""arguments"": {""dataset_path"": ""C:/data/cars.csv"", ""independent_variables"": [""engine_size"", ""fuel_economy""], ""dependent_variable"": ""car_price""}}
+</tool_call>",33.998034367999935,278,51,1.5000867240725797,13221.09716796875,,2026-04-28T22:49:35.140103,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""linear_regression.get_r_squared"", ""arguments"": {""dataset_path"": ""C:/data/cars.csv"", ""independent_variables"": [""engine_size"", ""fuel_economy""], ""dependent_variable"": ""car_price""}}]","[{""name"": ""linear_regression.get_r_squared"", ""arguments"": {""dataset_path"": [""C:/data/cars.csv""], ""independent_variables"": [[""engine_size"", ""fuel_economy""]], ""dependent_variable"": [""car_price""]}}]",correct
+simple_20,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""math.hcf"", ""arguments"": {""number1"": 36, ""number2"": 24}}
+</tool_call>",20.764626485999997,201,31,1.492923555398453,13215.78955078125,,2026-04-28T22:50:09.141779,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""math.hcf"", ""arguments"": {""number1"": 36, ""number2"": 24}}]","[{""name"": ""math.hcf"", ""arguments"": {""number1"": [36], ""number2"": [24]}}]",correct
+simple_160,simple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}
+</tool_call>",29.431753084999855,263,44,1.4949840015620741,13219.89306640625,,2026-04-28T22:50:29.908715,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}]","[{""name"": ""get_case_info"", ""arguments"": {""docket"": [""2022/AL2562""], ""court"": [""California"", ""CA""], ""info_type"": [""victim""]}}]",correct
+multiple_102,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_displacement"", ""arguments"": {""initial_velocity"": 10, ""time"": 5, ""acceleration"": 9.8}}
+</tool_call>",25.7927807760002,501,38,1.4732804628556544,13232.822265625,,2026-04-28T22:50:59.343039,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_displacement"", ""arguments"": {""initial_velocity"": 10, ""time"": 5, ""acceleration"": 9.8}}]","[{""name"": ""calculate_displacement"", ""arguments"": {""initial_velocity"": [10], ""time"": [5], ""acceleration"": [9.8]}}]",correct
+multiple_52,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""currency_conversion"", ""arguments"": {""amount"": 100, ""from_currency"": ""EUR"", ""to_currency"": ""USD""}}
+</tool_call>",24.106324034999943,339,36,1.493384057549863,13223.61376953125,,2026-04-28T22:51:25.139230,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""currency_conversion"", ""arguments"": {""amount"": 100, ""from_currency"": ""EUR"", ""to_currency"": ""USD""}}]","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": [100], ""from_currency"": [""Euro"", ""EUR""], ""to_currency"": [""USD"", ""US Dollar""]}}]",correct
+multiple_130,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_cagr"", ""arguments"": {""initial_value"": 2000, ""final_value"": 3000, ""period_in_years"": 4}}
+</tool_call>",29.31942873700018,489,43,1.4666042911584896,13232.20458984375,,2026-04-28T22:51:49.249291,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_cagr"", ""arguments"": {""initial_value"": 2000, ""final_value"": 3000, ""period_in_years"": 4}}]","[{""name"": ""calculate_cagr"", ""arguments"": {""initial_value"": [2000], ""final_value"": [3000], ""period_in_years"": [4]}}]",correct
+multiple_121,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""geometry.area_triangle"", ""arguments"": {""base"": 6, ""height"": 10}}
+</tool_call>",19.00069296699985,482,28,1.4736304643535911,13231.6533203125,,2026-04-28T22:52:18.573486,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""geometry.area_triangle"", ""arguments"": {""base"": 6, ""height"": 10}}]","[{""name"": ""geometry.area_triangle"", ""arguments"": {""base"": [6], ""height"": [10], ""unit"": ["""", ""square meters""]}}]",correct
+multiple_171,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""game_result.get_winner"", ""arguments"": {""teams"": [""Lakers"", ""Clippers""], ""date"": ""2021-01-28""}}
+</tool_call>",29.343745709999894,364,42,1.4313101134081547,13225.31005859375,,2026-04-28T22:52:37.578324,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""game_result.get_winner"", ""arguments"": {""teams"": [""Lakers"", ""Clippers""], ""date"": ""2021-01-28""}}]","[{""name"": ""game_result.get_winner"", ""arguments"": {""teams"": [[""Lakers"", ""Clippers""], [""Clippers"", ""Lakers""]], ""date"": [""2021-01-28"", ""01/28/2021"", ""Jan.28,2021""], ""venue"": [""""]}}]",correct
+multiple_173,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_defense_ranking"", ""arguments"": {""season"": 2021, ""top"": 1}}
+</tool_call>",21.654542477000177,467,32,1.4777499932860731,13230.73046875,,2026-04-28T22:53:06.924944,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_defense_ranking"", ""arguments"": {""season"": 2021, ""top"": 1}}]","[{""name"": ""get_defense_ranking"", ""arguments"": {""season"": [2021], ""top"": [1, """"]}}]",correct
+multiple_151,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""social_media_analytics.most_followed"", ""arguments"": {""topic"": ""psychology"", ""sub_topics"": [""behaviour"", ""group dynamics""]}}
+</tool_call>",27.144688552999924,521,40,1.4735847833324784,13234.05517578125,,2026-04-28T22:53:28.582853,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""social_media_analytics.most_followed"", ""arguments"": {""topic"": ""psychology"", ""sub_topics"": [""behaviour"", ""group dynamics""]}}]","[{""name"": ""social_media_analytics.most_followed"", ""arguments"": {""topic"": [""psychology"", ""Psychology""], ""sub_topics"": [[""behaviour"", ""group dynamics""], [""group dynamics"", ""behaviour""]], ""region"": ["""", ""global""]}}]",correct
+multiple_18,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""european_history.battle_details"", ""arguments"": {""battle"": ""Battle of Stalingrad""}}
+</tool_call>",18.85515443400027,312,28,1.485005073705969,13221.69873046875,,2026-04-28T22:53:55.732136,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""european_history.battle_details"", ""arguments"": {""battle"": ""Battle of Stalingrad""}}]","[{""name"": ""european_history.battle_details"", ""arguments"": {""battle"": [""Battle of Stalingrad"", ""Stalingrad""]}}]",correct
+multiple_50,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""house_price_forecast"", ""arguments"": {""location"": ""New York"", ""months"": 1}}
+</tool_call>",19.824163710999983,463,29,1.4628612042740825,13230.484375,,2026-04-28T22:54:14.589986,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""house_price_forecast"", ""arguments"": {""location"": ""New York"", ""months"": 1}}]","[{""name"": ""house_price_forecast"", ""arguments"": {""location"": [""New York"", ""New York, NY"", ""NYC"", ""New York City""], ""months"": [1], ""features"": [[], """"]}}]",correct
+multiple_12,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 2020, ""year2_revenue"": 1200000}}
+</tool_call>",53.937932893999914,530,80,1.4831862421798379,13236.47216796875,,2026-04-28T22:54:34.417337,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 2020, ""year2_revenue"": 1200000}}]","[{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": [""Tech Inc""], ""year1"": [2019], ""year1_revenue"": [1000000], ""year2"": [2020], ""year2_revenue"": [1200000]}}]",correct
+multiple_45,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""geology.get_era"", ""arguments"": {""era_name"": ""Ice age"", ""calculate_years_ago"": true}}
+</tool_call>",22.456634595000196,307,33,1.4694989073450573,13221.69873046875,,2026-04-28T22:55:28.358633,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""geology.get_era"", ""arguments"": {""era_name"": ""Ice age"", ""calculate_years_ago"": true}}]","[{""name"": ""geology.get_era"", ""arguments"": {""era_name"": [""Ice age""], ""calculate_years_ago"": [true]}}]",correct
+multiple_141,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""lawsuit.check_case"", ""arguments"": {""case_id"": 1234, ""closed_status"": true}}
+</tool_call>",21.739189174999865,462,32,1.4719960225931563,13230.4228515625,,2026-04-28T22:55:50.817881,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""lawsuit.check_case"", ""arguments"": {""case_id"": 1234, ""closed_status"": true}}]","[{""name"": ""lawsuit.check_case"", ""arguments"": {""case_id"": [1234], ""closed_status"": [true]}}]",correct
+multiple_48,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""library.find_nearby"", ""arguments"": {""location"": ""New York City, NY"", ""preferences"": [""Pet-friendly"", ""Disabled Access""]}}
+</tool_call>",25.666205746000287,382,38,1.4805460680888431,13226.07568359375,,2026-04-28T22:56:12.560434,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""library.find_nearby"", ""arguments"": {""location"": ""New York City, NY"", ""preferences"": [""Pet-friendly"", ""Disabled Access""]}}]","[{""name"": ""library.find_nearby"", ""arguments"": {""location"": [""New York City"", ""NYC"", ""New York City, NY""], ""preferences"": [[""Pet-friendly"", ""Disabled Access""], [""Disabled Access"", ""Pet-friendly""]]}}]",correct
+multiple_87,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""games.update.find"", ""arguments"": {""game"": ""Cyberpunk 2077"", ""platform"": ""Xbox""}}
+</tool_call>",23.821181719999913,439,35,1.4692805928521386,13229.03076171875,,2026-04-28T22:56:38.229619,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""games.update.find"", ""arguments"": {""game"": ""Cyberpunk 2077"", ""platform"": ""Xbox""}}]","[{""name"": ""games.update.find"", ""arguments"": {""game"": [""Cyberpunk 2077""], ""platform"": [""Xbox""], ""region"": ["""", ""global""]}}]",correct
+multiple_84,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""getTopGoalScorers"", ""arguments"": {""competition"": ""UEFA Champions League"", ""team"": ""Barcelona"", ""number"": 10}}
+</tool_call>",27.66346577000013,387,41,1.4820991823975571,13226.51416015625,,2026-04-28T22:57:02.053808,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""getTopGoalScorers"", ""arguments"": {""competition"": ""UEFA Champions League"", ""team"": ""Barcelona"", ""number"": 10}}]","[{""name"": ""getTopGoalScorers"", ""arguments"": {""competition"": [""UEFA Champions League""], ""team"": [""Barcelona""], ""number"": [10]}}]",correct
+multiple_146,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""restaurant.find_nearby"", ""arguments"": {""location"": ""Seattle"", ""cuisine"": ""Chinese"", ""max_distance"": 10}}
+</tool_call>",24.9885458939998,368,37,1.4806783938910335,13225.25537109375,,2026-04-28T22:57:29.720086,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""restaurant.find_nearby"", ""arguments"": {""location"": ""Seattle"", ""cuisine"": ""Chinese"", ""max_distance"": 10}}]","[{""name"": ""restaurant.find_nearby"", ""arguments"": {""location"": [""Seattle"", ""Seattle, WA""], ""cuisine"": [""Chinese""], ""max_distance"": [10]}}]",correct
+multiple_66,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Las Vegas"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}
+</tool_call>",25.70143053699985,431,38,1.4785169232232072,13228.75732421875,,2026-04-28T22:57:54.711342,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Las Vegas"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}]","[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": [""Las Vegas""], ""end_location"": [""Los Angeles""], ""time_period"": [""weekend""]}}]",correct
+multiple_79,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""exhibition_info"", ""arguments"": {""museum_name"": ""Museum of Modern Art"", ""month"": 1}}
+</tool_call>",22.28109557100015,322,33,1.4810761838368032,13222.52001953125,,2026-04-28T22:58:20.415707,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""exhibition_info"", ""arguments"": {""museum_name"": ""Museum of Modern Art"", ""month"": 1}}]","[{""name"": ""exhibition_info"", ""arguments"": {""museum_name"": [""Museum of Modern Art"", ""MOMA"", ""Museum of Modern Art, New York""], ""month"": ["""", 1]}}]",correct
+multiple_194,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_museum_hours"", ""arguments"": {""museum_name"": ""Metropolitan Museum of Art"", ""day"": ""Saturday""}}
+</tool_call>",23.327312275000168,619,34,1.4575189631442338,13240.0869140625,,2026-04-28T22:58:42.699672,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_museum_hours"", ""arguments"": {""museum_name"": ""Metropolitan Museum of Art"", ""day"": ""Saturday""}}]","[{""name"": ""get_museum_hours"", ""arguments"": {""museum_name"": [""Metropolitan Museum of Art"", ""The Met"", ""Met Museum""], ""day"": [""Saturday""]}}]",correct
+multiple_28,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""solve.quadratic_equation"", ""arguments"": {""a"": 2, ""b"": 3, ""c"": -4}}
+</tool_call>",23.793959776000065,395,35,1.4709615519861046,13226.62353515625,,2026-04-28T22:59:06.030698,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""solve.quadratic_equation"", ""arguments"": {""a"": 2, ""b"": 3, ""c"": -4}}]","[{""name"": ""solve.quadratic_equation"", ""arguments"": {""a"": [2], ""b"": [3], ""c"": [-4]}}]",correct
+multiple_184,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""recipe_search"", ""arguments"": {""dietary_restriction"": ""Vegetarian"", ""ingredients"": [""pasta"", ""cheese""], ""servings"": 2}}
+</tool_call>",29.199404437999874,475,43,1.4726327754836033,13231.43896484375,,2026-04-28T22:59:29.827552,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""recipe_search"", ""arguments"": {""dietary_restriction"": ""Vegetarian"", ""ingredients"": [""pasta"", ""cheese""], ""servings"": 2}}]","[{""name"": ""recipe_search"", ""arguments"": {""dietary_restriction"": [""Vegetarian""], ""ingredients"": [[""pasta"", ""cheese""], [""cheese"", ""pasta""]], ""servings"": [2]}}]",correct
+multiple_58,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""lawyer.search"", ""arguments"": {""location"": ""Los Angeles, CA"", ""expertise"": ""Divorce""}}
+</tool_call>",21.823978861999876,330,32,1.4662770800112308,13222.90283203125,,2026-04-28T22:59:59.030207,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""lawyer.search"", ""arguments"": {""location"": ""Los Angeles, CA"", ""expertise"": ""Divorce""}}]","[{""name"": ""lawyer.search"", ""arguments"": {""location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""expertise"": [""Divorce""]}}]",correct
+multiple_0,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""triangle_properties.get"", ""arguments"": {""side1"": 5, ""side2"": 4, ""side3"": 3, ""get_area"": true, ""get_perimeter"": true, ""get_angles"": true}}
+</tool_call>",37.43996702499999,546,55,1.4690183878440535,13235.97998046875,,2026-04-28T23:00:20.856882,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""triangle_properties.get"", ""arguments"": {""side1"": 5, ""side2"": 4, ""side3"": 3, ""get_area"": true, ""get_perimeter"": true, ""get_angles"": true}}]","[{""name"": ""triangle_properties.get"", ""arguments"": {""side1"": [5], ""side2"": [4], ""side3"": [3], ""get_area"": ["""", true], ""get_perimeter"": ["""", true], ""get_angles"": ["""", true]}}]",correct
+multiple_135,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}
+</tool_call>",29.75454315800016,378,44,1.4787657725529433,13226.18505859375,,2026-04-28T23:00:58.300275,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}]","[{""name"": ""get_case_info"", ""arguments"": {""docket"": [""2022/AL2562""], ""court"": [""California"", ""CA""], ""info_type"": [""victim""]}}]",correct
+multiple_120,multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""light_travel_time"", ""arguments"": {""distance_in_light_years"": 4}}
+</tool_call>",16.837462421000055,728,24,1.4253929362934565,13246.7978515625,,2026-04-28T23:01:28.058214,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""light_travel_time"", ""arguments"": {""distance_in_light_years"": 4}}]","[{""name"": ""light_travel_time"", ""arguments"": {""distance_in_light_years"": [4], ""speed_of_light"": [299792458, """"]}}]",correct
+parallel_68,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_area"", ""arguments"": {""base"": 12, ""height"": 15, ""unit"": ""m""}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_area"", ""arguments"": {""base"": 18, ""height"": 24, ""unit"": ""m""}}
+</tool_call>",46.320040143999904,319,68,1.4680470869325968,13224.27001953125,,2026-04-28T23:01:44.901857,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_area"", ""arguments"": {""base"": 12, ""height"": 15, ""unit"": ""m""}}, {""name"": ""calculate_area"", ""arguments"": {""base"": 18, ""height"": 24, ""unit"": ""m""}}]","[{""name"": ""calculate_area"", ""arguments"": {""base"": [12], ""height"": [15], ""unit"": [""m"", ""meters"", ""meter""]}}, {""name"": ""calculate_area"", ""arguments"": {""base"": [18], ""height"": [24], ""unit"": [""m"", ""meters"", ""meter""]}}]",correct
+parallel_57,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Sheraton Hotel"", ""location"": ""New York"", ""check_in"": ""2022-05-01"", ""check_out"": ""2022-05-05"", ""adults"": 2, ""children"": 1}}
+</tool_call>
+<tool_call>
+{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Marriott"", ""location"": ""Los Angeles"", ""check_in"": ""2022-06-01"", ""check_out"": ""2022-06-10"", ""adults"": 1, ""children"": 2}}
+</tool_call>",102.90821090999998,405,151,1.4673270350804122,13233.51611328125,,2026-04-28T23:02:31.224698,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Sheraton Hotel"", ""location"": ""New York"", ""check_in"": ""2022-05-01"", ""check_out"": ""2022-05-05"", ""adults"": 2, ""children"": 1}}, {""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Marriott"", ""location"": ""Los Angeles"", ""check_in"": ""2022-06-01"", ""check_out"": ""2022-06-10"", ""adults"": 1, ""children"": 2}}]","[{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": [""Sheraton Hotel"", ""Sheraton""], ""location"": [""New York"", ""New York, NY"", ""New York City"", ""NYC""], ""check_in"": [""2022-05-01"", ""05/01/2022"", ""May 1, 2022""], ""check_out"": [""2022-05-05"", ""05/05/2022"", ""May 5, 2022""], ""adults"": [2], ""children"": [1]}}, {""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": [""Marriott""], ""location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""check_in"": [""2022-06-01"", ""06/01/2022"", ""June 1, 2022""], ""check_out"": [""2022-06-10"", ""06/10/2022"", ""June 10, 2022""], ""adults"": [1], ""children"": [2]}}]",correct
+parallel_99,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""melting"", ""substance"": ""water""}}
+</tool_call>
+<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""freezing"", ""substance"": ""water""}}
+</tool_call>
+<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""vaporization"", ""substance"": ""water""}}
+</tool_call>
+<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""condensation"", ""substance"": ""water""}}
+</tool_call>",106.72924355300029,355,157,1.471012018576108,13231.10791015625,,2026-04-28T23:04:14.136079,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""melting"", ""substance"": ""water""}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""freezing"", ""substance"": ""water""}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""vaporization"", ""substance"": ""water""}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""condensation"", ""substance"": ""water""}}]","[{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""melting""], ""substance"": [""water"", """"]}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""freezing""], ""substance"": [""water"", """"]}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""vaporization""], ""substance"": [""water"", """"]}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""condensation""], ""substance"": [""water"", """"]}}]",correct
+parallel_129,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""create_histogram"", ""arguments"": {""data"": [12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], ""bins"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""create_histogram"", ""arguments"": {""data"": [32, 35, 31, 34, 38, 39, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46], ""bins"": 5}}
+</tool_call>",140.35676061799995,412,206,1.467688475374956,13236.90771484375,,2026-04-28T23:06:00.868889,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""create_histogram"", ""arguments"": {""data"": [12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26], ""bins"": 5}}, {""name"": ""create_histogram"", ""arguments"": {""data"": [32, 35, 31, 34, 38, 39, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46], ""bins"": 5}}]","[{""name"": ""create_histogram"", ""arguments"": {""data"": [[12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]], ""bins"": [5]}}, {""name"": ""create_histogram"", ""arguments"": {""data"": [[32, 35, 31, 34, 38, 39, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]], ""bins"": [5]}}]",correct
+parallel_190,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Shortest""}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Scenic""}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Shortest""}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Scenic""}}
+</tool_call>",108.20917993900002,263,160,1.478617619043002,13226.23876953125,,2026-04-28T23:08:21.230110,False,"argument_mismatch: Argument mismatch for 'start_location': predicted New York City, gold ['Los Angeles', 'Los Angeles, CA', 'LA'].","[{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Shortest""}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Scenic""}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Shortest""}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Scenic""}}]","[{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""New York City"", ""NYC""], ""end_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""route_preference"": [""Shortest""]}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""end_location"": [""Miami""], ""route_preference"": [""Shortest""]}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""New York City"", ""NYC""], ""end_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""route_preference"": [""Scenic""]}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""end_location"": [""Miami""], ""route_preference"": [""Scenic""]}}]",argument_mismatch
+parallel_183,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": 5, ""y"": 7}}
+</tool_call>
+<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": 10 - 5, ""y"": 15 - 7, ""z"": 0}}
+</tool_call>
+<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": 20 - 10, ""y"": 25 - 15, ""z"": 0}}
+</tool_call>",77.09141065100039,332,114,1.4787639639400043,13227.49755859375,,2026-04-28T23:10:09.442255,False,"wrong_call_count: predicted 1, gold 3.","[{""name"": ""math.hypot"", ""arguments"": {""x"": 5, ""y"": 7}}]","[{""name"": ""math.hypot"", ""arguments"": {""x"": [5], ""y"": [7], ""z"": ["""", 0]}}, {""name"": ""math.hypot"", ""arguments"": {""x"": [10], ""y"": [15], ""z"": ["""", 0]}}, {""name"": ""math.hypot"", ""arguments"": {""x"": [20], ""y"": [25], ""z"": ["""", 0]}}]",wrong_call_count
+parallel_162,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 4, ""total_outcomes"": 52}}
+</tool_call>
+<tool_call>
+{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 13, ""total_outcomes"": 52}}
+</tool_call>
+<tool_call>
+{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 26, ""total_outcomes"": 52, ""format_as_ratio"": true}}
+</tool_call>",70.78180592300032,373,105,1.4834320575858688,13229.24853515625,,2026-04-28T23:11:26.537989,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 4, ""total_outcomes"": 52}}, {""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 13, ""total_outcomes"": 52}}, {""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 26, ""total_outcomes"": 52, ""format_as_ratio"": true}}]","[{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": [4], ""total_outcomes"": [52], ""format_as_ratio"": [false, """"]}}, {""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": [13], ""total_outcomes"": [52], ""format_as_ratio"": [false, """"]}}, {""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": [26], ""total_outcomes"": [52], ""format_as_ratio"": [true]}}]",correct
+parallel_188,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""New York"", ""end_location"": ""Los Angeles"", ""mode"": ""driving""}}
+</tool_call>
+<tool_call>
+{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""San Francisco"", ""mode"": ""bicycling""}}
+</tool_call>
+<tool_call>
+{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""New York"", ""mode"": ""transit""}}
+</tool_call>",77.89295658999981,298,115,1.4763850935241574,13225.69189453125,,2026-04-28T23:12:37.324272,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""New York"", ""end_location"": ""Los Angeles"", ""mode"": ""driving""}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""San Francisco"", ""mode"": ""bicycling""}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""New York"", ""mode"": ""transit""}}]","[{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": [""New York"", ""New York, NY"", ""NYC""], ""end_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""mode"": [""driving"", """"]}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""end_location"": [""San Francisco"", ""SF""], ""mode"": [""bicycling""]}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": [""San Francisco"", ""SF""], ""end_location"": [""New York"", ""New York, NY"", ""NYC""], ""mode"": [""transit""]}}]",correct
+parallel_41,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""San Francisco, CA"", ""instruments"": [""Yamaha acoustic guitar"", ""Kawai piano""]}}
+</tool_call>
+<tool_call>
+{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""Chicago, IL"", ""instruments"": [""Yamaha acoustic guitar"", ""Kawai piano""]}}
+</tool_call>",56.04460089699933,248,83,1.4809633518943284,13221.20556640625,,2026-04-28T23:13:55.221014,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""San Francisco, CA"", ""instruments"": [""Yamaha acoustic guitar"", ""Kawai piano""]}}, {""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""Chicago, IL"", ""instruments"": [""Yamaha acoustic guitar"", ""Kawai piano""]}}]","[{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": [""San Francisco, CA"", ""San Francisco, CA"", ""San Francisco, California""], ""instruments"": [[""Yamaha Acoustic Guitar"", ""Kawai Piano""], [""Kawai Piano"", ""Yamaha Acoustic Guitar""], [""Yamaha acoustic guitar"", ""Kawai piano""], [""Kawai piano"", ""Yamaha acoustic guitar""]]}}, {""name"": ""find_music_instrument_store"", ""arguments"": {""location"": [""Chicago, IL"", ""Chicago, Illinois"", ""Chicago, IL.""], ""instruments"": [[""Yamaha Acoustic Guitar"", ""Kawai Piano""], [""Kawai Piano"", ""Yamaha Acoustic Guitar""], [""Yamaha acoustic guitar"", ""Kawai piano""], [""Kawai piano"", ""Yamaha acoustic guitar""]]}}]",correct
+parallel_60,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 7}}
+</tool_call>
+<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 9}}
+</tool_call>",42.432278083999336,193,63,1.4847187764768277,13217.10205078125,,2026-04-28T23:14:51.268145,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""math.factorial"", ""arguments"": {""number"": 5}}, {""name"": ""math.factorial"", ""arguments"": {""number"": 7}}, {""name"": ""math.factorial"", ""arguments"": {""number"": 9}}]","[{""name"": ""math.factorial"", ""arguments"": {""number"": [5]}}, {""name"": ""math.factorial"", ""arguments"": {""number"": [7]}}, {""name"": ""math.factorial"", ""arguments"": {""number"": [9]}}]",correct
+parallel_71,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_derivative"", ""arguments"": {""function"": ""3*x**3 - 2*x**2 + 5*x - 7"", ""x_value"": 4}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_derivative"", ""arguments"": {""function"": ""27*x**2 - 4*x + 5"", ""x_value"": 2}}
+</tool_call>",54.57342238600086,273,81,1.4842389657566735,13222.46435546875,,2026-04-28T23:15:33.702747,False,"argument_mismatch: Argument mismatch for 'function': predicted 3*x**3 - 2*x**2 + 5*x - 7, gold ['3x**3 - 2x**2 + 5x - 7', 'lambda x: 3x**3 - 2x**2 + 5x - 7'].","[{""name"": ""calculate_derivative"", ""arguments"": {""function"": ""3*x**3 - 2*x**2 + 5*x - 7"", ""x_value"": 4}}, {""name"": ""calculate_derivative"", ""arguments"": {""function"": ""27*x**2 - 4*x + 5"", ""x_value"": 2}}]","[{""name"": ""calculate_derivative"", ""arguments"": {""function"": [""3x**3 - 2x**2 + 5x - 7"", ""lambda x: 3x**3 - 2x**2 + 5x - 7""], ""x_value"": [4]}}, {""name"": ""calculate_derivative"", ""arguments"": {""function"": [""9x**2 - 4x + 5"", ""lambda x: 9x**2 - 4x + 5""], ""x_value"": [2]}}]",argument_mismatch
+parallel_156,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 100, ""max_depth"": 10, ""data"": ""data_random_forest""}}
+</tool_call>
+<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 200, ""max_depth"": 20, ""data"": ""data_random_forest""}}
+</tool_call>
+<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 300, ""max_depth"": 30, ""data"": ""data_random_forest""}}
+</tool_call>
+<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 400, ""max_depth"": 40, ""data"": ""data_random_forest""}}
+</tool_call>",113.27486661900002,396,168,1.4831180562327912,13233.95361328125,,2026-04-28T23:16:28.278955,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 100, ""max_depth"": 10, ""data"": ""data_random_forest""}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 200, ""max_depth"": 20, ""data"": ""data_random_forest""}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 300, ""max_depth"": 30, ""data"": ""data_random_forest""}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 400, ""max_depth"": 40, ""data"": ""data_random_forest""}}]","[{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [100], ""max_depth"": [10], ""data"": [""data_random_forest""]}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [200], ""max_depth"": [20], ""data"": [""data_random_forest""]}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [300], ""max_depth"": [30], ""data"": [""data_random_forest""]}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [400], ""max_depth"": [40], ""data"": [""data_random_forest""]}}]",correct
+parallel_11,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""New York"", ""size"": 3000}}
+</tool_call>
+<tool_call>
+{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""Los Angeles"", ""size"": 4000}}
+</tool_call>",43.163210830000025,232,64,1.4827441881482468,13219.29052734375,,2026-04-28T23:18:21.557379,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""New York"", ""size"": 3000}}, {""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""Los Angeles"", ""size"": 4000}}]","[{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": [""New York"", ""New York, NY"", ""NYC""], ""size"": [3000]}}, {""name"": ""ml.predict_house_price"", ""arguments"": {""location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""size"": [4000]}}]",correct
+parallel_185,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2021}}
+</tool_call>
+<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2021}}
+</tool_call>
+<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2023}}
+</tool_call>
+<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2023}}
+</tool_call>",101.8657132770004,285,152,1.492160562275463,13227.00439453125,,2026-04-28T23:19:04.723863,False,"argument_mismatch: Argument mismatch for 'species': predicted African Elephant, gold ['African Elephants'].","[{""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2021}}, {""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2021}}, {""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2023}}, {""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2023}}]","[{""name"": ""estimate_population"", ""arguments"": {""species"": [""Bengal Tigers"", ""Bengal Tiger""], ""country"": [""India""], ""year"": [2021]}}, {""name"": ""estimate_population"", ""arguments"": {""species"": [""African Elephants""], ""country"": [""Kenya""], ""year"": [2021]}}, {""name"": ""estimate_population"", ""arguments"": {""species"": [""Bengal Tigers"", ""Bengal Tiger""], ""country"": [""India""], ""year"": [""""]}}, {""name"": ""estimate_population"", ""arguments"": {""species"": [""African Elephants""], ""country"": [""Kenya""], ""year"": [2023]}}]",argument_mismatch
+parallel_118,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""six_months""}}
+</tool_call>
+<tool_call>
+{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""year""}}
+</tool_call>
+<tool_call>
+{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""five_years""}}
+</tool_call>",71.56044942100016,250,107,1.4952393517053533,13222.62744140625,,2026-04-28T23:20:46.592416,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""six_months""}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""year""}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""five_years""}}]","[{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": [""Amazon rainforest""], ""time_frame"": [""six_months""]}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": [""Amazon rainforest""], ""time_frame"": [""year""]}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": [""Amazon rainforest""], ""time_frame"": [""five_years""]}}]",correct
+parallel_105,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 300, ""volume"": 2.5, ""gas"": ""air""}}
+</tool_call>
+<tool_call>
+{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 350, ""volume"": 2.5, ""gas"": ""air""}}
+</tool_call>
+<tool_call>
+{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 350, ""volume"": 1.5, ""gas"": ""air""}}
+</tool_call>",74.8000247660002,326,111,1.483956727918815,13227.00537109375,,2026-04-28T23:21:58.155725,False,"argument_mismatch: Argument mismatch for 'temp': predicted 350, gold [300].","[{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 300, ""volume"": 2.5, ""gas"": ""air""}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 350, ""volume"": 2.5, ""gas"": ""air""}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 350, ""volume"": 1.5, ""gas"": ""air""}}]","[{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": [300], ""volume"": [2.5], ""gas"": [""air"", """"]}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": [350], ""volume"": [2.5], ""gas"": [""air"", """"]}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": [300], ""volume"": [1.5], ""gas"": [""air"", """"]}}]",argument_mismatch
+parallel_171,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 1000000, ""shareholder_equity"": 5000000, ""dividends_paid"": 200000}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000}}
+</tool_call>",71.11220838200006,353,105,1.4765397164430858,13228.15478515625,,2026-04-28T23:23:12.959628,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 1000000, ""shareholder_equity"": 5000000, ""dividends_paid"": 200000}}, {""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000}}]","[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": [1000000], ""shareholder_equity"": [5000000], ""dividends_paid"": [200000]}}, {""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": [2000000], ""shareholder_equity"": [10000000], ""dividends_paid"": [0, """"]}}]",correct
+parallel_44,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Berlin"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}
+</tool_call>
+<tool_call>
+{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Paris"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}
+</tool_call>",59.300050376999934,318,88,1.4839785032312822,13225.30908203125,,2026-04-28T23:24:24.074875,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Berlin"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Paris"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}]","[{""name"": ""concert.find_nearby"", ""arguments"": {""location"": [""Berlin""], ""date"": [""next Friday""], ""genre"": [""Classical"", ""classical""], ""amenities"": [[""Parking""], """"]}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": [""Paris""], ""date"": [""next Friday""], ""genre"": [""Classical"", ""classical""], ""amenities"": [[""Parking""], """"]}}]",correct
+parallel_110,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP"", ""organelle"": ""mitochondria"", ""specific_function"": true}}
+</tool_call>
+<tool_call>
+{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""DNA"", ""organelle"": ""nucleus"", ""specific_function"": true}}
+</tool_call>",54.26926321299925,298,81,1.4925575768752628,13223.83154296875,,2026-04-28T23:25:23.379139,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP"", ""organelle"": ""mitochondria"", ""specific_function"": true}}, {""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""DNA"", ""organelle"": ""nucleus"", ""specific_function"": true}}]","[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": [""ATP""], ""organelle"": [""mitochondria""], ""specific_function"": [true]}}, {""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": [""DNA""], ""organelle"": [""nucleus""], ""specific_function"": [true]}}]",correct
+parallel_153,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset1"", ""max_depth"": 10, ""n_estimators"": 100}}
+</tool_call>
+<tool_call>
+{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset2"", ""max_depth"": 20, ""n_estimators"": 200}}
+</tool_call>",55.27478173199961,344,82,1.483497490728736,13226.40380859375,,2026-04-28T23:26:17.652155,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset1"", ""max_depth"": 10, ""n_estimators"": 100}}, {""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset2"", ""max_depth"": 20, ""n_estimators"": 200}}]","[{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": [""dataset1""], ""max_depth"": [10], ""n_estimators"": [100]}}, {""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": [""dataset2""], ""max_depth"": [20], ""n_estimators"": [200]}}]",correct
+parallel_8,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""New York City"", ""type"": ""city"", ""year"": 2000}}
+</tool_call>
+<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Los Angeles"", ""type"": ""city"", ""year"": 2000}}
+</tool_call>
+<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Alaska"", ""type"": ""state"", ""year"": 2000}}
+</tool_call>
+<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""USA"", ""type"": ""country"", ""year"": 2000}}
+</tool_call>",108.14323187199989,258,160,1.479519311845411,13225.96533203125,,2026-04-28T23:27:12.929941,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""New York City"", ""type"": ""city"", ""year"": 2000}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Los Angeles"", ""type"": ""city"", ""year"": 2000}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Alaska"", ""type"": ""state"", ""year"": 2000}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""USA"", ""type"": ""country"", ""year"": 2000}}]","[{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""New York City"", ""NY"", ""New York City, NY"", ""NYC""], ""type"": [""city""], ""year"": ["""", 2000]}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""Los Angeles"", ""Los Angeles, CA"", ""CA"", ""Los Angeles, CA""], ""type"": [""city""], ""year"": ["""", 2000]}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""Alaska""], ""type"": [""state""], ""year"": ["""", 2000]}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""USA"", ""United States"", ""United States of America""], ""type"": [""country""], ""year"": ["""", 2000]}}]",correct
+parallel_123,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""A""]}}
+</tool_call>
+<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""T""]}}
+</tool_call>
+<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""C""]}}
+</tool_call>
+<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""G""]}}
+</tool_call>",83.1522609980002,298,124,1.4912402682950758,13226.18408203125,,2026-04-28T23:29:01.076747,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""A""]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""T""]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""C""]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""G""]}}]","[{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""A""]]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""T""]]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""C""]]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""G""]]}}]",correct
+parallel_163,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.6}}
+</tool_call>
+<tool_call>
+{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.5}}
+</tool_call>
+<tool_call>
+{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 15, ""num_success"": 6, ""prob_success"": 0.5}}
+</tool_call>",80.34265718999995,367,120,1.4936025792153673,13229.74072265625,,2026-04-28T23:30:24.231730,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.6}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.5}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 15, ""num_success"": 6, ""prob_success"": 0.5}}]","[{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": [10], ""num_success"": [6], ""prob_success"": [0.6]}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": [10], ""num_success"": [6], ""prob_success"": [0.5]}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": [15], ""num_success"": [6], ""prob_success"": [0.5]}}]",correct
+parallel_83,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 0, ""acceleration"": 5, ""time"": 10}}
+</tool_call>
+<tool_call>
+{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 10, ""acceleration"": 7, ""time"": 8}}
+</tool_call>
+<tool_call>
+{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 20, ""acceleration"": 4, ""time"": 12}}
+</tool_call>",70.88342850200024,367,106,1.4954129934193126,13228.97509765625,,2026-04-28T23:31:44.577720,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 0, ""acceleration"": 5, ""time"": 10}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 10, ""acceleration"": 7, ""time"": 8}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 20, ""acceleration"": 4, ""time"": 12}}]","[{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": [0], ""acceleration"": [5], ""time"": [10]}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": [10], ""acceleration"": [7], ""time"": [8]}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": [20], ""acceleration"": [4], ""time"": [12]}}]",correct
+parallel_12,parallel,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""gini"", ""max_depth"": 5, ""random_state"": 1}}
+</tool_call>
+<tool_call>
+{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""entropy"", ""max_depth"": 10, ""random_state"": 1}}
+</tool_call>",52.881058929000574,296,78,1.4750082842464396,13223.55810546875,,2026-04-28T23:32:55.464791,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""gini"", ""max_depth"": 5, ""random_state"": 1}}, {""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""entropy"", ""max_depth"": 10, ""random_state"": 1}}]","[{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": [""gini""], ""max_depth"": [5], ""random_state"": [1]}}, {""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": [""entropy""], ""max_depth"": [10], ""random_state"": [1]}}]",correct
+parallel_multiple_159,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000, ""dividends_paid"": 500000}}
+</tool_call>
+<tool_call>
+{""name"": ""get_song_lyrics"", ""arguments"": {""song_title"": ""Bohemian Rhapsody"", ""artist_name"": ""Queen"", ""lang"": ""English""}}
+</tool_call>
+<tool_call>
+{""name"": ""law_case_search.find_historical"", ""arguments"": {""subject"": ""fraud"", ""from_year"": 1990, ""to_year"": 2000}}
+</tool_call>
+<tool_call>
+{""name"": ""public_library.find_nearby"", ""arguments"": {""location"": ""Boston, MA"", ""facilities"": [""Reading Room"", ""Wi-Fi""]}}
+</tool_call>",124.81039208999937,841,184,1.474236214780254,13259.17822265625,,2026-04-28T23:33:48.348778,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000, ""dividends_paid"": 500000}}, {""name"": ""get_song_lyrics"", ""arguments"": {""song_title"": ""Bohemian Rhapsody"", ""artist_name"": ""Queen"", ""lang"": ""English""}}, {""name"": ""law_case_search.find_historical"", ""arguments"": {""subject"": ""fraud"", ""from_year"": 1990, ""to_year"": 2000}}, {""name"": ""public_library.find_nearby"", ""arguments"": {""location"": ""Boston, MA"", ""facilities"": [""Reading Room"", ""Wi-Fi""]}}]","[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": [2000000], ""shareholder_equity"": [10000000], ""dividends_paid"": [500000]}}, {""name"": ""get_song_lyrics"", ""arguments"": {""song_title"": [""Bohemian Rhapsody""], ""artist_name"": [""Queen""], ""lang"": [""English"", """"]}}, {""name"": ""law_case_search.find_historical"", ""arguments"": {""subject"": [""fraud""], ""from_year"": [1990], ""to_year"": [2000]}}, {""name"": ""public_library.find_nearby"", ""arguments"": {""location"": [""Boston, MA"", ""Boston,MA"", ""Boston""], ""facilities"": [[""Reading Room"", ""Wi-Fi""], [""Wi-Fi"", ""Reading Room""]]}}]",correct
+parallel_multiple_108,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""five_factor_model.analyse"", ""arguments"": {""talkative"": true, ""nervous"": false, ""artistic_interests"": true, ""lazy"": false, ""forgiving"": true}}
+</tool_call>
+<tool_call>
+{""name"": ""MBTI.analyse"", ""arguments"": {""thinking_vs_feeling"": ""feeling"", ""introverted_vs_extroverted"": ""extroverted"", ""judging_vs_perceiving"": ""perceiving"", ""sensing_vs_intuition"": ""intuition""}}
+</tool_call>",75.52791993400024,617,112,1.482895333247238,13242.98291015625,,2026-04-28T23:35:53.165853,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""five_factor_model.analyse"", ""arguments"": {""talkative"": true, ""nervous"": false, ""artistic_interests"": true, ""lazy"": false, ""forgiving"": true}}, {""name"": ""MBTI.analyse"", ""arguments"": {""thinking_vs_feeling"": ""feeling"", ""introverted_vs_extroverted"": ""extroverted"", ""judging_vs_perceiving"": ""perceiving"", ""sensing_vs_intuition"": ""intuition""}}]","[{""name"": ""five_factor_model.analyse"", ""arguments"": {""talkative"": [true], ""nervous"": [false], ""artistic_interests"": [true], ""lazy"": [false], ""forgiving"": [true]}}, {""name"": ""MBTI.analyse"", ""arguments"": {""thinking_vs_feeling"": [""feeling"", ""F""], ""introverted_vs_extroverted"": [""extroverted"", ""E""], ""judging_vs_perceiving"": [""perceiving"", ""P""], ""sensing_vs_intuition"": [""intuition"", ""N""]}}]",correct
+parallel_multiple_196,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""recipe_info.get_calories"", ""arguments"": {""website"": ""AllRecipes"", ""recipe"": ""Chicken Alfredo"", ""optional_meal_time"": ""Dinner""}}
+</tool_call>
+<tool_call>
+{""name"": ""get_stock_price"", ""arguments"": {""company_names"": [""Apple"", ""Microsoft"", ""Tesla""]}}
+</tool_call>
+<tool_call>
+{""name"": ""get_team_ranking"", ""arguments"": {""team_name"": ""Brazil"", ""year"": 2018, ""gender"": ""men""}}
+</tool_call>",77.48298330899979,546,109,1.4067604955956754,13238.93408203125,,2026-04-28T23:37:08.698019,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""recipe_info.get_calories"", ""arguments"": {""website"": ""AllRecipes"", ""recipe"": ""Chicken Alfredo"", ""optional_meal_time"": ""Dinner""}}, {""name"": ""get_stock_price"", ""arguments"": {""company_names"": [""Apple"", ""Microsoft"", ""Tesla""]}}, {""name"": ""get_team_ranking"", ""arguments"": {""team_name"": ""Brazil"", ""year"": 2018, ""gender"": ""men""}}]","[{""name"": ""recipe_info.get_calories"", ""arguments"": {""website"": [""AllRecipes""], ""recipe"": [""Chicken Alfredo""], ""optional_meal_time"": [""Dinner"", """"]}}, {""name"": ""get_stock_price"", ""arguments"": {""company_names"": [[""Apple"", ""Microsoft"", ""Tesla""]]}}, {""name"": ""get_team_ranking"", ""arguments"": {""team_name"": [""Brazil""], ""year"": [2018], ""gender"": [""men"", """"]}}]",correct
+parallel_multiple_64,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""African Elephant"", ""ecosystem"": ""Grassland"", ""location"": ""Serengeti"", ""timeframe"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""African Elephant"", ""location"": ""Serengeti"", ""duration"": 10}}
+</tool_call>
+<tool_call>
+{""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""Bengal Tiger"", ""ecosystem"": ""Forest"", ""location"": ""Sundarbans"", ""timeframe"": 3}}
+</tool_call>
+<tool_call>
+{""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""Bengal Tiger"", ""location"": ""Sundarbans"", ""duration"": 7}}
+</tool_call>",126.96616672899927,490,189,1.4885855410867666,13240.24560546875,,2026-04-28T23:38:26.184889,False,"argument_mismatch: Argument mismatch for 'ecosystem': predicted Grassland, gold ['Serengeti', 'Serengeti ecosystem'].","[{""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""African Elephant"", ""ecosystem"": ""Grassland"", ""location"": ""Serengeti"", ""timeframe"": 5}}, {""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""African Elephant"", ""location"": ""Serengeti"", ""duration"": 10}}, {""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""Bengal Tiger"", ""ecosystem"": ""Forest"", ""location"": ""Sundarbans"", ""timeframe"": 3}}, {""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""Bengal Tiger"", ""location"": ""Sundarbans"", ""duration"": 7}}]","[{""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": [""African Elephant""], ""location"": [""Serengeti"", ""Serengeti ecosystem""], ""duration"": [10]}}, {""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": [""African Elephant""], ""ecosystem"": [""Serengeti"", ""Serengeti ecosystem""], ""location"": [""Serengeti""], ""timeframe"": [5, """"]}}, {""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": [""Bengal Tiger""], ""location"": [""Sundarbans"", ""Sundarbans ecosystem""], ""duration"": [7]}}, {""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": [""Bengal Tiger"", ""Tiger""], ""ecosystem"": [""Sundarbans"", ""Sundarbans ecosystem""], ""location"": [""Sundarbans""], ""timeframe"": [3]}}]",argument_mismatch
+parallel_multiple_46,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""museum.get_hours"", ""arguments"": {""museum_name"": ""Louvre Museum""}}
+</tool_call>
+<tool_call>
+{""name"": ""museum.get_waiting_time"", ""arguments"": {""museum_name"": ""Louvre Museum"", ""day"": ""Monday""}}
+</tool_call>
+<tool_call>
+{""name"": ""location.get_travel_time"", ""arguments"": {""destination"": ""Louvre Museum""}}
+</tool_call>",55.91119119799987,418,83,1.4844970786987846,13230.50732421875,,2026-04-28T23:40:33.154762,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""museum.get_hours"", ""arguments"": {""museum_name"": ""Louvre Museum""}}, {""name"": ""museum.get_waiting_time"", ""arguments"": {""museum_name"": ""Louvre Museum"", ""day"": ""Monday""}}, {""name"": ""location.get_travel_time"", ""arguments"": {""destination"": ""Louvre Museum""}}]","[{""name"": ""museum.get_hours"", ""arguments"": {""museum_name"": [""Louvre Museum"", ""Louvre""]}}, {""name"": ""museum.get_waiting_time"", ""arguments"": {""museum_name"": [""Louvre Museum"", ""Louvre""], ""day"": ["""", ""Monday""]}}, {""name"": ""location.get_travel_time"", ""arguments"": {""destination"": [""Louvre Museum"", ""Louvre""], ""mode"": [""Driving"", """"]}}]",correct
+parallel_multiple_1,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""area_rectangle.calculate"", ""arguments"": {""length"": 7.0, ""breadth"": 3.0}}
+</tool_call>
+<tool_call>
+{""name"": ""area_circle.calculate"", ""arguments"": {""radius"": 5.0}}
+</tool_call>",37.17475336899952,371,55,1.4794987193073128,13226.40380859375,,2026-04-28T23:41:29.070347,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""area_rectangle.calculate"", ""arguments"": {""length"": 7.0, ""breadth"": 3.0}}, {""name"": ""area_circle.calculate"", ""arguments"": {""radius"": 5.0}}]","[{""name"": ""area_rectangle.calculate"", ""arguments"": {""length"": [7.0], ""breadth"": [3.0]}}, {""name"": ""area_circle.calculate"", ""arguments"": {""radius"": [5.0]}}]",correct
+parallel_multiple_167,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""get_collectables_in_season"", ""arguments"": {""game_name"": ""Animal Crossing"", ""season"": ""Summer"", ""item_type"": ""fish""}}
+</tool_call>
+<tool_call>
+{""name"": ""game_score.highest"", ""arguments"": {""game"": ""Fortnite"", ""platform"": ""Playstation"", ""region"": ""Asia""}}
+</tool_call>
+<tool_call>
+{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2018}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_binomial_probability"", ""arguments"": {""number_of_trials"": 10, ""number_of_successes"": 3, ""probability_of_success"": 0.7}}
+</tool_call>",102.87082500499946,779,151,1.4678602994839547,13253.98095703125,,2026-04-28T23:42:06.247929,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_collectables_in_season"", ""arguments"": {""game_name"": ""Animal Crossing"", ""season"": ""Summer"", ""item_type"": ""fish""}}, {""name"": ""game_score.highest"", ""arguments"": {""game"": ""Fortnite"", ""platform"": ""Playstation"", ""region"": ""Asia""}}, {""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2018}}, {""name"": ""calculate_binomial_probability"", ""arguments"": {""number_of_trials"": 10, ""number_of_successes"": 3, ""probability_of_success"": 0.7}}]","[{""name"": ""get_collectables_in_season"", ""arguments"": {""game_name"": [""Animal Crossing""], ""season"": [""Summer""], ""item_type"": [""fish""]}}, {""name"": ""game_score.highest"", ""arguments"": {""game"": [""Fortnite""], ""platform"": [""Playstation"", ""PS""], ""region"": [""Asia""]}}, {""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": [""Apple Inc.""], ""year"": [2018], ""case_type"": [""""]}}, {""name"": ""calculate_binomial_probability"", ""arguments"": {""number_of_trials"": [10], ""number_of_successes"": [3], ""probability_of_success"": [0.7]}}]",correct
+parallel_multiple_140,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_density"", ""arguments"": {""mass"": 10, ""volume"": 2, ""unit"": ""kg/m³""}}
+</tool_call>
+<tool_call>
+{""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""red"", ""color2"": ""blue"", ""lightness"": 70}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_density"", ""arguments"": {""mass"": 5, ""volume"": 1, ""unit"": ""g/cm³""}}
+</tool_call>
+<tool_call>
+{""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""yellow"", ""color2"": ""blue"", ""lightness"": 30}}
+</tool_call>",96.08784250200006,533,143,1.4882215718083531,13240.08251953125,,2026-04-28T23:43:49.123058,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_density"", ""arguments"": {""mass"": 10, ""volume"": 2, ""unit"": ""kg/m³""}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""red"", ""color2"": ""blue"", ""lightness"": 70}}, {""name"": ""calculate_density"", ""arguments"": {""mass"": 5, ""volume"": 1, ""unit"": ""g/cm³""}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""yellow"", ""color2"": ""blue"", ""lightness"": 30}}]","[{""name"": ""calculate_density"", ""arguments"": {""mass"": [10], ""volume"": [2], ""unit"": [""kg/m³"", ""kilograms per cubic meter"", """"]}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": [""red""], ""color2"": [""blue""], ""lightness"": [70]}}, {""name"": ""calculate_density"", ""arguments"": {""mass"": [5], ""volume"": [1], ""unit"": [""g/cm³"", ""grams per cubic centimeter""]}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": [""yellow""], ""color2"": [""blue""], ""lightness"": [30]}}]",correct
+parallel_multiple_170,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""create_player_profile"", ""arguments"": {""player_name"": ""DragonSlayer"", ""class_type"": ""Warrior"", ""starting_level"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""New York, NY"", ""genre"": ""Rock""}}
+</tool_call>
+<tool_call>
+{""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_slope_gradient"", ""arguments"": {""point1"": [40.7128, -74.006], ""point2"": [34.0522, -118.2437], ""unit"": ""degree""}}
+</tool_call>",113.66124130500066,819,167,1.4692783404667307,13257.04443359375,,2026-04-28T23:45:25.214815,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""create_player_profile"", ""arguments"": {""player_name"": ""DragonSlayer"", ""class_type"": ""Warrior"", ""starting_level"": 5}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""New York, NY"", ""genre"": ""Rock""}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}, {""name"": ""calculate_slope_gradient"", ""arguments"": {""point1"": [40.7128, -74.006], ""point2"": [34.0522, -118.2437], ""unit"": ""degree""}}]","[{""name"": ""create_player_profile"", ""arguments"": {""player_name"": [""DragonSlayer""], ""class_type"": [""Warrior""], ""starting_level"": [5]}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": [""New York, NY"", ""NY"", ""New York""], ""genre"": [""Rock""]}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": [52], ""hand_size"": [5]}}, {""name"": ""calculate_slope_gradient"", ""arguments"": {""point1"": [[40.7128, -74.006]], ""point2"": [[34.0522, -118.2437]], ""unit"": [""degree"", """"]}}]",correct
+parallel_multiple_22,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""sales_growth.calculate"", ""arguments"": {""company"": ""XYZ"", ""years"": 3}}
+</tool_call>
+<tool_call>
+{""name"": ""financial_ratios.interest_coverage"", ""arguments"": {""company_name"": ""XYZ"", ""years"": 3}}
+</tool_call>",39.31775286099946,422,58,1.4751606025158182,13229.35888671875,,2026-04-28T23:47:18.880672,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""sales_growth.calculate"", ""arguments"": {""company"": ""XYZ"", ""years"": 3}}, {""name"": ""financial_ratios.interest_coverage"", ""arguments"": {""company_name"": ""XYZ"", ""years"": 3}}]","[{""name"": ""financial_ratios.interest_coverage"", ""arguments"": {""company_name"": [""XYZ""], ""years"": [3]}}, {""name"": ""sales_growth.calculate"", ""arguments"": {""company"": [""XYZ""], ""years"": [3]}}]",correct
+parallel_multiple_24,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""investment.invest"", ""arguments"": {""company"": ""Google"", ""amount"": 2000.0}}
+</tool_call>
+<tool_call>
+{""name"": ""investment.withdraw"", ""arguments"": {""company"": ""Apple"", ""amount"": 1000.0}}
+</tool_call>",43.078860536999855,298,64,1.485647466116966,13222.90185546875,,2026-04-28T23:47:58.202096,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""investment.invest"", ""arguments"": {""company"": ""Google"", ""amount"": 2000.0}}, {""name"": ""investment.withdraw"", ""arguments"": {""company"": ""Apple"", ""amount"": 1000.0}}]","[{""name"": ""investment.invest"", ""arguments"": {""company"": [""Google"", ""GOOG""], ""amount"": [2000.0]}}, {""name"": ""investment.withdraw"", ""arguments"": {""company"": [""Apple"", ""AAPL""], ""amount"": [1000.0]}}]",correct
+parallel_multiple_5,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""gcd"", ""arguments"": {""num1"": 96, ""num2"": 128}}
+</tool_call>
+<tool_call>
+{""name"": ""lcm"", ""arguments"": {""num1"": 15, ""num2"": 25}}
+</tool_call>",40.438411080999686,394,60,1.4837378224336684,13227.93701171875,,2026-04-28T23:48:41.284566,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""gcd"", ""arguments"": {""num1"": 96, ""num2"": 128}}, {""name"": ""lcm"", ""arguments"": {""num1"": 15, ""num2"": 25}}]","[{""name"": ""gcd"", ""arguments"": {""num1"": [96], ""num2"": [128]}}, {""name"": ""lcm"", ""arguments"": {""num1"": [15], ""num2"": [25]}}]",correct
+parallel_multiple_23,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""financial_ratio.net_profit_margin"", ""arguments"": {""net_income"": 20000, ""total_revenue"": 100000}}
+</tool_call>
+<tool_call>
+{""name"": ""financial_ratio.debt_ratio"", ""arguments"": {""total_liabilities"": 10000, ""total_assets"": 30000}}
+</tool_call>",54.530603359999986,371,81,1.4854044336398484,13227.82666015625,,2026-04-28T23:49:21.726051,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""financial_ratio.net_profit_margin"", ""arguments"": {""net_income"": 20000, ""total_revenue"": 100000}}, {""name"": ""financial_ratio.debt_ratio"", ""arguments"": {""total_liabilities"": 10000, ""total_assets"": 30000}}]","[{""name"": ""financial_ratio.net_profit_margin"", ""arguments"": {""net_income"": [20000], ""total_revenue"": [100000]}}, {""name"": ""financial_ratio.debt_ratio"", ""arguments"": {""total_liabilities"": [10000], ""total_assets"": [30000]}}]",correct
+parallel_multiple_106,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""calculate_distance"", ""arguments"": {""start_point"": ""San Francisco"", ""end_point"": ""Palo Alto""}}
+</tool_call>
+<tool_call>
+{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""Palo Alto"", ""time_period"": ""now""}}
+</tool_call>
+<tool_call>
+{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Palo Alto"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}
+</tool_call>
+<tool_call>
+{""name"": ""weather_forecast"", ""arguments"": {""location"": ""Los Angeles"", ""days"": 5}}
+</tool_call>",91.28215946399996,513,136,1.4898858747270978,13238.60595703125,,2026-04-28T23:50:16.259771,False,"argument_mismatch: Argument mismatch for 'time_period': predicted now, gold ['weekday'].","[{""name"": ""calculate_distance"", ""arguments"": {""start_point"": ""San Francisco"", ""end_point"": ""Palo Alto""}}, {""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""Palo Alto"", ""time_period"": ""now""}}, {""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Palo Alto"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}, {""name"": ""weather_forecast"", ""arguments"": {""location"": ""Los Angeles"", ""days"": 5}}]","[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": [""San Francisco"", ""SF""], ""end_location"": [""Palo Alto""], ""time_period"": [""weekday""]}}, {""name"": ""calculate_distance"", ""arguments"": {""start_point"": [""San Francisco"", ""SF""], ""end_point"": [""Palo Alto""]}}, {""name"": ""traffic_estimate"", ""arguments"": {""start_location"": [""Palo Alto""], ""end_location"": [""Los Angeles"", ""LA""], ""time_period"": [""weekend""]}}, {""name"": ""weather_forecast"", ""arguments"": {""location"": [""Los Angeles"", ""LA""], ""days"": [5]}}]",argument_mismatch
+parallel_multiple_98,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""currency_conversion"", ""arguments"": {""amount"": 5000, ""from_currency"": ""JPY"", ""to_currency"": ""USD""}}
+</tool_call>
+<tool_call>
+{""name"": ""unit_conversion"", ""arguments"": {""value"": 15, ""from_unit"": ""km"", ""to_unit"": ""mi""}}
+</tool_call>",49.1612263549996,398,73,1.484910068615,13228.86669921875,,2026-04-28T23:51:47.545328,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""currency_conversion"", ""arguments"": {""amount"": 5000, ""from_currency"": ""JPY"", ""to_currency"": ""USD""}}, {""name"": ""unit_conversion"", ""arguments"": {""value"": 15, ""from_unit"": ""km"", ""to_unit"": ""mi""}}]","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": [5000.0], ""from_currency"": [""Japanese Yen"", ""JPY""], ""to_currency"": [""US Dollars"", ""USD"", ""US Dollar""]}}, {""name"": ""unit_conversion"", ""arguments"": {""value"": [15.0], ""from_unit"": [""km"", ""kilometer"", ""kilometers""], ""to_unit"": [""mi"", ""mile"", ""miles""]}}]",correct
+parallel_multiple_156,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""run_two_sample_ttest"", ""arguments"": {""group1"": [12, 15, 18, 22, 25], ""group2"": [20, 23, 26, 29, 32], ""equal_variance"": true}}
+</tool_call>
+<tool_call>
+{""name"": ""restaurant_search.find_closest"", ""arguments"": {""location"": ""Boston, MA"", ""cuisine"": ""Sushi"", ""amenities"": [""Patio"", ""Wi-Fi""]}}
+</tool_call>
+<tool_call>
+{""name"": ""get_personality_traits"", ""arguments"": {""hobby"": ""painting"", ""trait_count"": 5}}
+</tool_call>",100.64316977900035,665,148,1.4705419187908058,13247.57861328125,,2026-04-28T23:52:36.709742,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""run_two_sample_ttest"", ""arguments"": {""group1"": [12, 15, 18, 22, 25], ""group2"": [20, 23, 26, 29, 32], ""equal_variance"": true}}, {""name"": ""restaurant_search.find_closest"", ""arguments"": {""location"": ""Boston, MA"", ""cuisine"": ""Sushi"", ""amenities"": [""Patio"", ""Wi-Fi""]}}, {""name"": ""get_personality_traits"", ""arguments"": {""hobby"": ""painting"", ""trait_count"": 5}}]","[{""name"": ""run_two_sample_ttest"", ""arguments"": {""group1"": [[12, 15, 18, 22, 25]], ""group2"": [[20, 23, 26, 29, 32]], ""equal_variance"": [true, """"]}}, {""name"": ""restaurant_search.find_closest"", ""arguments"": {""location"": [""Boston, MA"", ""Boston,MA"", ""Boston"", ""MA""], ""cuisine"": [""Sushi""], ""amenities"": [[""Patio"", ""Wi-Fi""], [""Patio""], [""Wi-Fi""]]}}, {""name"": ""get_personality_traits"", ""arguments"": {""hobby"": [""painting""], ""trait_count"": [5, """"]}}]",correct
+parallel_multiple_184,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B1234"", ""floors"": [1, 2, 3, 4], ""mode"": ""dynamic""}}
+</tool_call>
+<tool_call>
+{""name"": ""player_statistic"", ""arguments"": {""player_name"": ""Michael Jordan"", ""year"": 1996}}
+</tool_call>
+<tool_call>
+{""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B5678"", ""floors"": [5, 6, 7, 8], ""mode"": ""static""}}
+</tool_call>
+<tool_call>
+{""name"": ""player_statistic"", ""arguments"": {""player_name"": ""LeBron James"", ""year"": 2018, ""team_name"": ""Los Angeles Lakers""}}
+</tool_call>",113.66573740900003,509,168,1.478017948324134,13240.13623046875,,2026-04-28T23:54:17.356880,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B1234"", ""floors"": [1, 2, 3, 4], ""mode"": ""dynamic""}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": ""Michael Jordan"", ""year"": 1996}}, {""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B5678"", ""floors"": [5, 6, 7, 8], ""mode"": ""static""}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": ""LeBron James"", ""year"": 2018, ""team_name"": ""Los Angeles Lakers""}}]","[{""name"": ""analyze_structure"", ""arguments"": {""building_id"": [""B1234""], ""floors"": [[1, 2, 3, 4]], ""mode"": [""dynamic""]}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": [""Michael Jordan""], ""year"": [1996], ""team_name"": [""""]}}, {""name"": ""analyze_structure"", ""arguments"": {""building_id"": [""B5678""], ""floors"": [[5, 6, 7, 8]], ""mode"": [""static"", """"]}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": [""LeBron James""], ""year"": [2018], ""team_name"": [""Los Angeles Lakers"", ""Lakers""]}}]",correct
+parallel_multiple_123,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}
+</tool_call>
+<tool_call>
+{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}
+</tool_call>
+<tool_call>
+{""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}
+</tool_call>
+<tool_call>
+{""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}
+</tool_call>",118.29695494200041,496,176,1.4877813218970066,13239.86279296875,,2026-04-28T23:56:11.026418,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}, {""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}]","[{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2019], ""platform"": [""Playstation"", ""PS""]}}, {""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2020], ""platform"": [""PC"", ""Personal Computer""]}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2019], ""platform"": [""Playstation"", ""PS""]}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2020], ""platform"": [""PC"", ""Personal Computer""]}}]",correct
+parallel_multiple_57,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""hotel.find"", ""arguments"": {""location"": ""Paris, France"", ""stars"": 4, ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}
+</tool_call>
+<tool_call>
+{""name"": ""hotel.find"", ""arguments"": {""location"": ""New York, USA"", ""stars"": 4, ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}
+</tool_call>",62.65174304999982,461,93,1.4843960514519199,13233.40771484375,,2026-04-28T23:58:09.328363,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""hotel.find"", ""arguments"": {""location"": ""Paris, France"", ""stars"": 4, ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}, {""name"": ""hotel.find"", ""arguments"": {""location"": ""New York, USA"", ""stars"": 4, ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}]","[{""name"": ""hotel.find"", ""arguments"": {""location"": [""Paris"", ""Paris, France"", ""France""], ""stars"": [4], ""amenities"": [[""Free WiFi"", ""Breakfast Included"", ""Gym""]]}}, {""name"": ""hotel.find"", ""arguments"": {""location"": [""New York"", ""New York, USA"", ""NY"", ""NY, USA"", ""USA""], ""stars"": [4], ""amenities"": [[""Free WiFi"", ""Breakfast Included"", ""Gym""]]}}]",correct
+parallel_multiple_80,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""functions.intersect"", ""arguments"": {""function1"": ""4*x+7"", ""function2"": ""2*x+5""}}
+</tool_call>
+<tool_call>
+{""name"": ""functions.zero"", ""arguments"": {""function"": ""3*x+9""}}
+</tool_call>",39.037585758000205,373,58,1.4857476166572037,13226.67724609375,,2026-04-28T23:59:11.983471,False,"argument_mismatch: Argument mismatch for 'function1': predicted 4*x+7, gold ['4x + 7', 'lambda x: 4x + 7'].","[{""name"": ""functions.intersect"", ""arguments"": {""function1"": ""4*x+7"", ""function2"": ""2*x+5""}}, {""name"": ""functions.zero"", ""arguments"": {""function"": ""3*x+9""}}]","[{""name"": ""functions.intersect"", ""arguments"": {""function1"": [""4x + 7"", ""lambda x: 4x + 7""], ""function2"": [""2x + 5"", ""lambda x: 2x + 5""]}}, {""name"": ""functions.zero"", ""arguments"": {""function"": [""3x + 9"", ""lambda x: 3x + 9""]}}]",argument_mismatch
+parallel_multiple_192,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""main course"", ""time"": 45}}
+</tool_call>
+<tool_call>
+{""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""hospital.locate"", ""arguments"": {""location"": ""Denver, CO"", ""radius"": 10, ""department"": ""Emergency""}}
+</tool_call>",72.3410247390002,607,107,1.4791053953969577,13242.16259765625,,2026-04-28T23:59:51.024159,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""main course"", ""time"": 45}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}, {""name"": ""hospital.locate"", ""arguments"": {""location"": ""Denver, CO"", ""radius"": 10, ""department"": ""Emergency""}}]","[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": [""vegan""], ""recipe_type"": [""main course""], ""time"": [45]}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": [52], ""hand_size"": [5]}}, {""name"": ""hospital.locate"", ""arguments"": {""location"": [""Denver, CO"", ""Denver"", ""CO""], ""radius"": [10], ""department"": [""Emergency""]}}]",correct
+parallel_multiple_120,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""soccer_scores.get_scores"", ""arguments"": {""team"": ""Manchester United"", ""league"": ""English Premier League"", ""rounds"": 5}}
+</tool_call>
+<tool_call>
+{""name"": ""basketball_scores.get_scores"", ""arguments"": {""team"": ""Los Angeles Lakers"", ""league"": ""NBA"", ""rounds"": 7}}
+</tool_call>",52.28164207200007,409,78,1.4919194751492637,13229.74169921875,,2026-04-29T00:01:03.370178,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""soccer_scores.get_scores"", ""arguments"": {""team"": ""Manchester United"", ""league"": ""English Premier League"", ""rounds"": 5}}, {""name"": ""basketball_scores.get_scores"", ""arguments"": {""team"": ""Los Angeles Lakers"", ""league"": ""NBA"", ""rounds"": 7}}]","[{""name"": ""soccer_scores.get_scores"", ""arguments"": {""team"": [""Manchester United""], ""league"": [""English Premier League"", ""EPL""], ""rounds"": [5]}}, {""name"": ""basketball_scores.get_scores"", ""arguments"": {""team"": [""Los Angeles Lakers"", ""Lakers""], ""league"": [""NBA"", ""National Basketball Association""], ""rounds"": [7]}}]",correct
+parallel_multiple_18,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""currency_conversion"", ""arguments"": {""amount"": 10.0, ""from_currency"": ""USD"", ""to_currency"": ""EUR""}}
+</tool_call>
+<tool_call>
+{""name"": ""banking_service"", ""arguments"": {""account_id"": ""987654"", ""amount"": 10.0}}
+</tool_call>",48.66574088500056,327,73,1.5000285349092382,13224.98193359375,,2026-04-29T00:01:55.655124,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""currency_conversion"", ""arguments"": {""amount"": 10.0, ""from_currency"": ""USD"", ""to_currency"": ""EUR""}}, {""name"": ""banking_service"", ""arguments"": {""account_id"": ""987654"", ""amount"": 10.0}}]","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": [10.0], ""from_currency"": [""USD"", ""United States Dollar""], ""to_currency"": [""EUR"", ""Euro""]}}, {""name"": ""banking_service"", ""arguments"": {""account_id"": [""987654""], ""amount"": [10.0]}}]",correct
+parallel_multiple_38,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": 1900}}
+</tool_call>
+<tool_call>
+{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": 1950}}
+</tool_call>
+<tool_call>
+{""name"": ""us_history.gdp"", ""arguments"": {""year"": 1900}}
+</tool_call>
+<tool_call>
+{""name"": ""us_history.gdp"", ""arguments"": {""year"": 1950}}
+</tool_call>",68.5771394960002,290,102,1.4873761248958075,13224.54345703125,,2026-04-29T00:02:44.324727,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": 1900}}, {""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": 1950}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": 1900}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": 1950}}]","[{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": [1900]}}, {""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": [1950]}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": [1900]}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": [1950]}}]",correct
+parallel_multiple_95,parallel_multiple,T4,Qwen/Qwen2.5-7B-Instruct,transformers,0,"<tool_call>
+{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [1, 2, 3], ""vector2"": [4, 5, 6], ""rounding"": 2}}
+</tool_call>
+<tool_call>
+{""name"": ""correlation.calculate"", ""arguments"": {""array1"": [7, 8, 9], ""array2"": [10, 11, 12], ""type"": ""pearson""}}
+</tool_call>
+<tool_call>
+{""name"": ""correlation.calculate"", ""arguments"": {""array1"": [13, 14, 15], ""array2"": [16, 17, 18], ""type"": ""spearman""}}
+</tool_call>
+<tool_call>
+{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [19, 20, 21], ""vector2"": [22, 23, 24], ""rounding"": 3}}
+</tool_call>",142.54601437200017,608,210,1.473208499902117,13247.85107421875,,2026-04-29T00:03:52.905203,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [1, 2, 3], ""vector2"": [4, 5, 6], ""rounding"": 2}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": [7, 8, 9], ""array2"": [10, 11, 12], ""type"": ""pearson""}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": [13, 14, 15], ""array2"": [16, 17, 18], ""type"": ""spearman""}}, {""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [19, 20, 21], ""vector2"": [22, 23, 24], ""rounding"": 3}}]","[{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [[1, 2, 3]], ""vector2"": [[4, 5, 6]], ""rounding"": [2]}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": [[7, 8, 9]], ""array2"": [[10, 11, 12]], ""type"": [""pearson"", """"]}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": [[13, 14, 15]], ""array2"": [[16, 17, 18]], ""type"": [""spearman""]}}, {""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [[19, 20, 21]], ""vector2"": [[22, 23, 24]], ""rounding"": [3]}}]",correct

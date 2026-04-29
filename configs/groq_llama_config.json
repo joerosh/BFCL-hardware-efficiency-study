@@ -1,0 +1,9 @@
+{
+  "hardware": "Groq_LPU_Llama",
+  "backend": "groq_prompt_api",
+  "model_name": "llama-3.1-8b-instant",
+  "temperature": 0.0,
+  "max_new_tokens": 512,
+  "batch_size": 1,
+  "num_repeats": 1
+}
