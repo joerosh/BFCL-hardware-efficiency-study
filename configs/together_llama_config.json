@@ -1,0 +1,8 @@
+{
+    "hardware": "Together_GPU_Cluster",
+    "backend": "together_api",
+    "model_name": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+    "temperature": 0.0,
+    "max_new_tokens": 512,
+    "notes": "Together AI GPU cluster API. Llama-3.1-8B-Instruct-Turbo. OpenAI-compatible endpoint."
+}
