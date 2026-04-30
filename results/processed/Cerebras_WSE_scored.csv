@@ -1,0 +1,663 @@
+task_id,category,hardware,model,backend,run_index,raw_output,latency_s,input_tokens,output_tokens,tokens_per_second,peak_memory_mb,peak_memory_allocated_mb,peak_memory_reserved_mb,error,groq_server_tokens_per_second,groq_response_id,timestamp,correct,score_reason,parsed_calls,gold_calls,failure_type
+simple_361,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""restaurant_finder"", ""arguments"": {""city"": ""New York"", ""cuisine"": ""Italian"", ""diet"": ""Gluten-free""}}
+</tool_call>",0.30102204205468297,296,41,136.20265054394932,,,,,,,2026-04-30T21:50:15.845799+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""restaurant_finder"", ""arguments"": {""city"": ""New York"", ""cuisine"": ""Italian"", ""diet"": ""Gluten-free""}}]","[{""name"": ""restaurant_finder"", ""arguments"": {""city"": [""New York City"", ""New York City, NY"", ""NYC"", ""New York""], ""cuisine"": [""Italian""], ""diet"": [""Gluten-free""]}}]",correct
+simple_113,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""probability.dice_roll"", ""arguments"": {""desired_number"": 6, ""number_of_rolls"": 2, ""die_sides"": 6}}
+</tool_call>",0.15705475001595914,308,45,286.52428529176814,,,,,,,2026-04-30T21:50:17.152366+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""probability.dice_roll"", ""arguments"": {""desired_number"": 6, ""number_of_rolls"": 2, ""die_sides"": 6}}]","[{""name"": ""probability.dice_roll"", ""arguments"": {""desired_number"": [6], ""number_of_rolls"": [2], ""die_sides"": [6, """"]}}]",correct
+simple_135,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_return_on_investment"", ""arguments"": {""purchase_price"": 20, ""sale_price"": 25, ""dividend"": 2}}
+</tool_call>",0.366244541015476,306,43,117.40789331842355,,,,,,,2026-04-30T21:50:18.316729+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_return_on_investment"", ""arguments"": {""purchase_price"": 20, ""sale_price"": 25, ""dividend"": 2}}]","[{""name"": ""calculate_return_on_investment"", ""arguments"": {""purchase_price"": [20], ""sale_price"": [25], ""dividend"": [2]}}]",correct
+simple_1,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": ""5""}}
+</tool_call>",0.24853883299510926,207,26,104.61141901519923,,,,,,,2026-04-30T21:50:19.696762+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""math.factorial"", ""arguments"": {""number"": ""5""}}]","[{""name"": ""math.factorial"", ""arguments"": {""number"": [5]}}]",correct
+simple_123,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""hypothesis_testing.two_sample_t_test"", ""arguments"": {""group1"": ""[12.4, 15.6, 11.2, 18.9]"", ""group2"": ""[10.5, 9.8, 15.2, 13.8]"", ""alpha"": ""0.05""}}
+</tool_call>",0.2659605420194566,389,81,304.55645557405416,,,,,,,2026-04-30T21:50:20.953028+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""hypothesis_testing.two_sample_t_test"", ""arguments"": {""group1"": ""[12.4, 15.6, 11.2, 18.9]"", ""group2"": ""[10.5, 9.8, 15.2, 13.8]"", ""alpha"": ""0.05""}}]","[{""name"": ""hypothesis_testing.two_sample_t_test"", ""arguments"": {""group1"": [[12.4, 15.6, 11.2, 18.9]], ""group2"": [[10.5, 9.8, 15.2, 13.8]], ""alpha"": [0.05, """"]}}]",correct
+simple_36,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_shortest_driving_distance"", ""arguments"": {""origin"": ""New York City"", ""destination"": ""Washington D.C."", ""unit"": ""km""}}
+</tool_call>",0.2643609589431435,292,45,170.22180650236717,,,,,,,2026-04-30T21:50:22.225617+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_shortest_driving_distance"", ""arguments"": {""origin"": ""New York City"", ""destination"": ""Washington D.C."", ""unit"": ""km""}}]","[{""name"": ""get_shortest_driving_distance"", ""arguments"": {""origin"": [""New York City""], ""destination"": [""Washington D.C.""], ""unit"": [""km"", """"]}}]",correct
+simple_353,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""find_recipes"", ""arguments"": {""diet"": ""gluten-free"", ""meal_type"": ""dinner""}}
+</tool_call>",0.21510324999690056,310,36,167.3614880319973,,,,,,,2026-04-30T21:50:23.497026+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_recipes"", ""arguments"": {""diet"": ""gluten-free"", ""meal_type"": ""dinner""}}]","[{""name"": ""find_recipes"", ""arguments"": {""diet"": [""gluten-free""], ""meal_type"": [""dinner""], ""ingredients"": [""""]}}]",correct
+simple_137,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_stock_return"", ""arguments"": {""investment_amount"": 5000, ""annual_growth_rate"": 0.06, ""holding_period"": 5}}
+</tool_call>",0.24756454105954617,355,45,181.7707810957315,,,,,,,2026-04-30T21:50:24.717175+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_stock_return"", ""arguments"": {""investment_amount"": 5000, ""annual_growth_rate"": 0.06, ""holding_period"": 5}}]","[{""name"": ""calculate_stock_return"", ""arguments"": {""investment_amount"": [5000], ""annual_growth_rate"": [0.06], ""holding_period"": [5], ""dividends"": ["""", false]}}]",correct
+simple_200,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_emissions"", ""arguments"": {""distance"": 12000, ""fuel_type"": ""gasoline"", ""fuel_efficiency"": 25}}
+</tool_call>",0.16833062504883856,352,43,255.44965443765332,,,,,,,2026-04-30T21:50:25.970438+00:00,False,"argument_mismatch: Argument mismatch for 'fuel_type': predicted gasoline, gold ['gas'].","[{""name"": ""calculate_emissions"", ""arguments"": {""distance"": 12000, ""fuel_type"": ""gasoline"", ""fuel_efficiency"": 25}}]","[{""name"": ""calculate_emissions"", ""arguments"": {""distance"": [12000], ""fuel_type"": [""gas""], ""fuel_efficiency"": ["""", 25.0], ""efficiency_reduction"": [0, """"]}}]",argument_mismatch
+simple_179,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""find_latest_court_case"", ""arguments"": {""company1"": ""Apple"", ""company2"": ""Samsung"", ""country"": ""USA""}}
+</tool_call>",0.3431412499630824,280,42,122.39857494404612,,,,,,,2026-04-30T21:50:27.143359+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_latest_court_case"", ""arguments"": {""company1"": ""Apple"", ""company2"": ""Samsung"", ""country"": ""USA""}}]","[{""name"": ""find_latest_court_case"", ""arguments"": {""company1"": [""Apple""], ""company2"": [""Samsung""], ""country"": [""USA"", """"]}}]",correct
+simple_153,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_compounded_interest"", ""arguments"": {""principal"": 5000, ""rate"": 0.03, ""time"": 5, ""n"": 4}}
+</tool_call>",0.26360624993685633,348,48,182.0897646072421,,,,,,,2026-04-30T21:50:28.506731+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_compounded_interest"", ""arguments"": {""principal"": 5000, ""rate"": 0.03, ""time"": 5, ""n"": 4}}]","[{""name"": ""calculate_compounded_interest"", ""arguments"": {""principal"": [5000], ""rate"": [0.03], ""time"": [5], ""n"": [4]}}]",correct
+simple_136,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""compound_interest"", ""arguments"": {""principal"": 10000, ""annual_rate"": 5, ""compounding_freq"": ""monthly"", ""time_in_years"": 5}}
+</tool_call>",0.27720074995886534,359,49,176.76719852767806,,,,,,,2026-04-30T21:50:29.777406+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""compound_interest"", ""arguments"": {""principal"": 10000, ""annual_rate"": 5, ""compounding_freq"": ""monthly"", ""time_in_years"": 5}}]","[{""name"": ""compound_interest"", ""arguments"": {""principal"": [10000], ""annual_rate"": [5.0], ""compounding_freq"": [""monthly""], ""time_in_years"": [5]}}]",correct
+simple_58,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP synthase"", ""organelle"": ""mitochondria"", ""specific_function"": ""true""}}
+</tool_call>",0.2765360000776127,299,49,177.19211960196012,,,,,,,2026-04-30T21:50:31.063722+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP synthase"", ""organelle"": ""mitochondria"", ""specific_function"": ""true""}}]","[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": [""ATP synthase""], ""organelle"": [""mitochondria""], ""specific_function"": [true]}}]",correct
+simple_55,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""biology.get_cell_info"", ""arguments"": {""cell_type"": ""human cell"", ""detailed"": ""true""}}
+</tool_call>",0.17136100004427135,253,36,210.08280758573625,,,,,,,2026-04-30T21:50:32.344236+00:00,False,"argument_mismatch: Argument mismatch for 'cell_type': predicted human cell, gold ['human'].","[{""name"": ""biology.get_cell_info"", ""arguments"": {""cell_type"": ""human cell"", ""detailed"": ""true""}}]","[{""name"": ""biology.get_cell_info"", ""arguments"": {""cell_type"": [""human""], ""detailed"": [true]}}]",argument_mismatch
+simple_13,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_area_under_curve"", ""arguments"": {""function"": ""x**2"", ""interval"": ""[1, 3]"", ""method"": ""trapezoidal""}}
+</tool_call>",0.4275308341020718,317,47,109.9335913366634,,,,,,,2026-04-30T21:50:33.522144+00:00,False,"argument_mismatch: Argument mismatch for 'interval': predicted [1, 3], gold [[1.0, 3.0]].","[{""name"": ""calculate_area_under_curve"", ""arguments"": {""function"": ""x**2"", ""interval"": ""[1, 3]"", ""method"": ""trapezoidal""}}]","[{""name"": ""calculate_area_under_curve"", ""arguments"": {""function"": [""x**2"", ""lambda x: x**2"", ""y=x**2""], ""interval"": [[1.0, 3.0]], ""method"": ["""", ""trapezoidal""]}}]",argument_mismatch
+simple_354,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_vegan_recipe"", ""arguments"": {""dish_type"": ""soup"", ""cooking_time"": ""30"", ""ingredient_preference"": ""[]""}}
+</tool_call>",0.2487749580759555,340,43,172.8469791837783,,,,,,,2026-04-30T21:50:34.957820+00:00,False,"argument_mismatch: Argument mismatch for 'ingredient_preference': predicted [], gold [''].","[{""name"": ""get_vegan_recipe"", ""arguments"": {""dish_type"": ""soup"", ""cooking_time"": ""30"", ""ingredient_preference"": ""[]""}}]","[{""name"": ""get_vegan_recipe"", ""arguments"": {""dish_type"": [""soup""], ""cooking_time"": [30], ""ingredient_preference"": [""""]}}]",argument_mismatch
+simple_260,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""paint_requirement.calculate"", ""arguments"": {""area"": {""width"": 20, ""height"": 12}, ""paint_coverage"": 350, ""exclusion"": {""type"": ""window"", ""area"": 15}}}
+</tool_call>",0.2578918330837041,472,60,232.65568080446255,,,,,,,2026-04-30T21:50:36.213082+00:00,False,"argument_mismatch: Argument mismatch for 'area': predicted {'width': 20, 'height': 12}, gold [{'width': [20], 'height': [12]}].","[{""name"": ""paint_requirement.calculate"", ""arguments"": {""area"": {""width"": 20, ""height"": 12}, ""paint_coverage"": 350, ""exclusion"": {""type"": ""window"", ""area"": 15}}}]","[{""name"": ""paint_requirement.calculate"", ""arguments"": {""area"": [{""width"": [20], ""height"": [12]}], ""paint_coverage"": [350], ""exclusion"": [{""type"": [""window""], ""area"": [15]}]}}]",argument_mismatch
+simple_367,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""dessert"", ""time"": ""30""}}
+</tool_call>",0.22238295804709196,306,43,193.3601404424807,,,,,,,2026-04-30T21:50:37.478072+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""dessert"", ""time"": ""30""}}]","[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": [""vegan""], ""recipe_type"": [""dessert""], ""time"": [30]}}]",correct
+simple_255,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""religious_history.get_papal_biography"", ""arguments"": {""papal_name"": ""Innocent III"", ""include_contributions"": true}}
+</tool_call>",0.2561973329866305,274,44,171.74261529996534,,,,,,,2026-04-30T21:50:38.702079+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""religious_history.get_papal_biography"", ""arguments"": {""papal_name"": ""Innocent III"", ""include_contributions"": true}}]","[{""name"": ""religious_history.get_papal_biography"", ""arguments"": {""papal_name"": [""Innocent III"", ""Pope Innocent III""], ""include_contributions"": [true]}}]",correct
+simple_242,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_scientist_for_discovery"", ""arguments"": {""discovery"": ""theory of evolution""}}
+</tool_call>",0.2626179999206215,219,33,125.65779957952054,,,,,,,2026-04-30T21:50:39.964535+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_scientist_for_discovery"", ""arguments"": {""discovery"": ""theory of evolution""}}]","[{""name"": ""get_scientist_for_discovery"", ""arguments"": {""discovery"": [""Theory of Evolution"", ""theory of evolution""]}}]",correct
+simple_176,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2010, ""case_type"": ""Patent""}}
+</tool_call>",0.24169695796445012,294,44,182.04614725217897,,,,,,,2026-04-30T21:50:41.233231+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2010, ""case_type"": ""Patent""}}]","[{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": [""Apple Inc.""], ""year"": [2010], ""case_type"": [""Patent"", ""IPR""]}}]",correct
+simple_57,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_cell_density"", ""arguments"": {""optical_density"": 0.6, ""dilution"": 5, ""calibration_factor"": 1e9}}
+</tool_call>",0.26480862498283386,327,48,181.26297813415852,,,,,,,2026-04-30T21:50:42.477979+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_cell_density"", ""arguments"": {""optical_density"": 0.6, ""dilution"": 5, ""calibration_factor"": 1000000000.0}}]","[{""name"": ""calculate_cell_density"", ""arguments"": {""optical_density"": [0.6], ""dilution"": [5], ""calibration_factor"": [1000000000.0, """"]}}]",correct
+simple_126,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""linear_regression.get_r_squared"", ""arguments"": {""dataset_path"": ""C:/data/cars.csv"", ""independent_variables"": ""['engine_size', 'fuel_economy']"", ""dependent_variable"": ""car_price""}}
+</tool_call>",0.19930012500844896,323,57,286.0008241218293,,,,,,,2026-04-30T21:50:43.753580+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""linear_regression.get_r_squared"", ""arguments"": {""dataset_path"": ""C:/data/cars.csv"", ""independent_variables"": ""['engine_size', 'fuel_economy']"", ""dependent_variable"": ""car_price""}}]","[{""name"": ""linear_regression.get_r_squared"", ""arguments"": {""dataset_path"": [""C:/data/cars.csv""], ""independent_variables"": [[""engine_size"", ""fuel_economy""]], ""dependent_variable"": [""car_price""]}}]",correct
+simple_20,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""math.hcf"", ""arguments"": {""number1"": 36, ""number2"": 24}}
+</tool_call>",0.17784658400341868,233,34,191.17600818999387,,,,,,,2026-04-30T21:50:44.959278+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""math.hcf"", ""arguments"": {""number1"": 36, ""number2"": 24}}]","[{""name"": ""math.hcf"", ""arguments"": {""number1"": [36], ""number2"": [24]}}]",correct
+simple_160,simple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}
+</tool_call>",0.22151591698639095,299,45,203.14567283562118,,,,,,,2026-04-30T21:50:46.139691+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}]","[{""name"": ""get_case_info"", ""arguments"": {""docket"": [""2022/AL2562""], ""court"": [""California"", ""CA""], ""info_type"": [""victim""]}}]",correct
+multiple_102,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_displacement"", ""arguments"": {""initial_velocity"": 10, ""time"": 5, ""acceleration"": 9.8}}
+</tool_call>",0.27615599997807294,610,42,152.08795030104304,,,,,,,2026-04-30T21:50:47.370342+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_displacement"", ""arguments"": {""initial_velocity"": 10, ""time"": 5, ""acceleration"": 9.8}}]","[{""name"": ""calculate_displacement"", ""arguments"": {""initial_velocity"": [10], ""time"": [5], ""acceleration"": [9.8]}}]",correct
+multiple_52,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""currency_conversion"", ""arguments"": {""amount"": 100, ""from_currency"": ""EUR"", ""to_currency"": ""USD""}}
+</tool_call>",0.19557195797096938,413,39,199.4150920439685,,,,,,,2026-04-30T21:50:48.656478+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""currency_conversion"", ""arguments"": {""amount"": 100, ""from_currency"": ""EUR"", ""to_currency"": ""USD""}}]","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": [100], ""from_currency"": [""Euro"", ""EUR""], ""to_currency"": [""USD"", ""US Dollar""]}}]",correct
+multiple_130,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_cagr"", ""arguments"": {""initial_value"": 2000, ""final_value"": 3000, ""period_in_years"": 4}}
+</tool_call>",0.23825874994508922,593,44,184.67317573915145,,,,,,,2026-04-30T21:50:49.855593+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_cagr"", ""arguments"": {""initial_value"": 2000, ""final_value"": 3000, ""period_in_years"": 4}}]","[{""name"": ""calculate_cagr"", ""arguments"": {""initial_value"": [2000], ""final_value"": [3000], ""period_in_years"": [4]}}]",correct
+multiple_121,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""geometry.area_triangle"", ""arguments"": {""base"": 6, ""height"": 10, ""unit"": ""square meters""}}
+</tool_call>",0.25810404191724956,597,39,151.1018568725233,,,,,,,2026-04-30T21:50:51.099986+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""geometry.area_triangle"", ""arguments"": {""base"": 6, ""height"": 10, ""unit"": ""square meters""}}]","[{""name"": ""geometry.area_triangle"", ""arguments"": {""base"": [6], ""height"": [10], ""unit"": ["""", ""square meters""]}}]",correct
+multiple_171,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""game_result.get_winner"", ""arguments"": {""teams"": ""['Lakers', 'Clippers']"", ""date"": ""2021-01-28""}}
+</tool_call>",0.20633908407762647,435,44,213.2412295842451,,,,,,,2026-04-30T21:50:52.364536+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""game_result.get_winner"", ""arguments"": {""teams"": ""['Lakers', 'Clippers']"", ""date"": ""2021-01-28""}}]","[{""name"": ""game_result.get_winner"", ""arguments"": {""teams"": [[""Lakers"", ""Clippers""], [""Clippers"", ""Lakers""]], ""date"": [""2021-01-28"", ""01/28/2021"", ""Jan.28,2021""], ""venue"": [""""]}}]",correct
+multiple_173,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_defense_ranking"", ""arguments"": {""season"": 2021, ""top"": 1}}
+</tool_call>",0.18204979202710092,576,35,192.25509466547322,,,,,,,2026-04-30T21:50:53.579056+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_defense_ranking"", ""arguments"": {""season"": 2021, ""top"": 1}}]","[{""name"": ""get_defense_ranking"", ""arguments"": {""season"": [2021], ""top"": [1, """"]}}]",correct
+multiple_151,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""social_media_analytics.most_followed"", ""arguments"": {""topic"": ""psychology"", ""sub_topics"": [""behaviour"", ""group dynamics""], ""region"": ""global""}}
+</tool_call>",0.37063187500461936,647,50,134.90474881410788,,,,,,,2026-04-30T21:50:54.768247+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""social_media_analytics.most_followed"", ""arguments"": {""topic"": ""psychology"", ""sub_topics"": [""behaviour"", ""group dynamics""], ""region"": ""global""}}]","[{""name"": ""social_media_analytics.most_followed"", ""arguments"": {""topic"": [""psychology"", ""Psychology""], ""sub_topics"": [[""behaviour"", ""group dynamics""], [""group dynamics"", ""behaviour""]], ""region"": ["""", ""global""]}}]",correct
+multiple_18,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""european_history.battle_details"", ""arguments"": {""battle"": ""Battle of Stalingrad""}}
+</tool_call>",0.22148258402012289,388,33,148.99591381416144,,,,,,,2026-04-30T21:50:56.145605+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""european_history.battle_details"", ""arguments"": {""battle"": ""Battle of Stalingrad""}}]","[{""name"": ""european_history.battle_details"", ""arguments"": {""battle"": [""Battle of Stalingrad"", ""Stalingrad""]}}]",correct
+multiple_50,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""house_price_forecast"", ""arguments"": {""location"": ""New York"", ""months"": 1}}
+</tool_call>",0.33147750003263354,576,34,102.57106439095487,,,,,,,2026-04-30T21:50:57.369125+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""house_price_forecast"", ""arguments"": {""location"": ""New York"", ""months"": 1}}]","[{""name"": ""house_price_forecast"", ""arguments"": {""location"": [""New York"", ""New York, NY"", ""NYC"", ""New York City""], ""months"": [1], ""features"": [[], """"]}}]",correct
+multiple_12,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 2020, ""year2_revenue"": 1200000}}
+</tool_call>",0.29051420802716166,638,73,251.27858804473638,,,,,,,2026-04-30T21:50:58.708303+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": ""Tech Inc"", ""year1"": 2019, ""year1_revenue"": 1000000, ""year2"": 2020, ""year2_revenue"": 1200000}}]","[{""name"": ""corporate_finance.calculate_YOY_growth_rate"", ""arguments"": {""company_name"": [""Tech Inc""], ""year1"": [2019], ""year1_revenue"": [1000000], ""year2"": [2020], ""year2_revenue"": [1200000]}}]",correct
+multiple_45,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""geology.get_era"", ""arguments"": {""era_name"": ""Ice age"", ""calculate_years_ago"": ""True""}}
+</tool_call>",0.3523372079944238,370,39,110.6894166017721,,,,,,,2026-04-30T21:51:00.004112+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""geology.get_era"", ""arguments"": {""era_name"": ""Ice age"", ""calculate_years_ago"": ""True""}}]","[{""name"": ""geology.get_era"", ""arguments"": {""era_name"": [""Ice age""], ""calculate_years_ago"": [true]}}]",correct
+multiple_141,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""lawsuit.check_case"", ""arguments"": {""case_id"": ""1234"", ""closed_status"": ""True""}}
+</tool_call>",0.1959625839954242,564,36,183.7085389772193,,,,,,,2026-04-30T21:51:01.362723+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""lawsuit.check_case"", ""arguments"": {""case_id"": ""1234"", ""closed_status"": ""True""}}]","[{""name"": ""lawsuit.check_case"", ""arguments"": {""case_id"": [1234], ""closed_status"": [true]}}]",correct
+multiple_48,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""library.find_nearby"", ""arguments"": {""location"": ""New York City, NY"", ""preferences"": [""Pet-friendly"", ""Disabled Access""]}}
+</tool_call>",0.35529683402273804,470,43,121.02556477395494,,,,,,,2026-04-30T21:51:02.563615+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""library.find_nearby"", ""arguments"": {""location"": ""New York City, NY"", ""preferences"": [""Pet-friendly"", ""Disabled Access""]}}]","[{""name"": ""library.find_nearby"", ""arguments"": {""location"": [""New York City"", ""NYC"", ""New York City, NY""], ""preferences"": [[""Pet-friendly"", ""Disabled Access""], [""Disabled Access"", ""Pet-friendly""]]}}]",correct
+multiple_87,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""games.update.find"", ""arguments"": {""game"": ""Cyberpunk 2077"", ""platform"": ""Xbox""}}
+</tool_call>",0.20364704204257578,533,38,186.59735795256714,,,,,,,2026-04-30T21:51:03.925700+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""games.update.find"", ""arguments"": {""game"": ""Cyberpunk 2077"", ""platform"": ""Xbox""}}]","[{""name"": ""games.update.find"", ""arguments"": {""game"": [""Cyberpunk 2077""], ""platform"": [""Xbox""], ""region"": ["""", ""global""]}}]",correct
+multiple_84,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""getTopGoalScorers"", ""arguments"": {""competition"": ""UEFA Champions League"", ""team"": ""Barcelona"", ""number"": ""10""}}
+</tool_call>",0.19826291594654322,466,45,226.97134148946523,,,,,,,2026-04-30T21:51:05.141951+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""getTopGoalScorers"", ""arguments"": {""competition"": ""UEFA Champions League"", ""team"": ""Barcelona"", ""number"": ""10""}}]","[{""name"": ""getTopGoalScorers"", ""arguments"": {""competition"": [""UEFA Champions League""], ""team"": [""Barcelona""], ""number"": [10]}}]",correct
+multiple_146,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""restaurant.find_nearby"", ""arguments"": {""location"": ""Seattle, WA"", ""cuisine"": ""Chinese"", ""max_distance"": ""10""}}
+</tool_call>",0.2644782910356298,444,43,162.58423264768885,,,,,,,2026-04-30T21:51:06.351400+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""restaurant.find_nearby"", ""arguments"": {""location"": ""Seattle, WA"", ""cuisine"": ""Chinese"", ""max_distance"": ""10""}}]","[{""name"": ""restaurant.find_nearby"", ""arguments"": {""location"": [""Seattle"", ""Seattle, WA""], ""cuisine"": [""Chinese""], ""max_distance"": [10]}}]",correct
+multiple_66,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Las Vegas"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}
+</tool_call>",0.26925424998626113,529,43,159.70035756982148,,,,,,,2026-04-30T21:51:07.622341+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Las Vegas"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}]","[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": [""Las Vegas""], ""end_location"": [""Los Angeles""], ""time_period"": [""weekend""]}}]",correct
+multiple_79,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""exhibition_info"", ""arguments"": {""museum_name"": ""Museum of Modern Art, New York"", ""month"": ""1""}}
+</tool_call>",0.3779487500432879,392,41,108.480316432596,,,,,,,2026-04-30T21:51:08.896806+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""exhibition_info"", ""arguments"": {""museum_name"": ""Museum of Modern Art, New York"", ""month"": ""1""}}]","[{""name"": ""exhibition_info"", ""arguments"": {""museum_name"": [""Museum of Modern Art"", ""MOMA"", ""Museum of Modern Art, New York""], ""month"": ["""", 1]}}]",correct
+multiple_194,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_museum_hours"", ""arguments"": {""museum_name"": ""Metropolitan Museum of Art"", ""day"": ""Saturday""}}
+</tool_call>",0.3217030840460211,764,39,121.22979832677287,,,,,,,2026-04-30T21:51:10.276214+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_museum_hours"", ""arguments"": {""museum_name"": ""Metropolitan Museum of Art"", ""day"": ""Saturday""}}]","[{""name"": ""get_museum_hours"", ""arguments"": {""museum_name"": [""Metropolitan Museum of Art"", ""The Met"", ""Met Museum""], ""day"": [""Saturday""]}}]",correct
+multiple_28,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""solve.quadratic_equation"", ""arguments"": {""a"": ""2"", ""b"": ""3"", ""c"": ""-4""}}
+</tool_call>",0.27633595804218203,495,40,144.75133921548527,,,,,,,2026-04-30T21:51:11.605758+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""solve.quadratic_equation"", ""arguments"": {""a"": ""2"", ""b"": ""3"", ""c"": ""-4""}}]","[{""name"": ""solve.quadratic_equation"", ""arguments"": {""a"": [2], ""b"": [3], ""c"": [-4]}}]",correct
+multiple_184,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""recipe_search"", ""arguments"": {""dietary_restriction"": ""Vegetarian"", ""ingredients"": [""pasta"", ""cheese"", ""tomatoes"", ""basil""], ""servings"": 2}}
+</tool_call>",0.2108774579828605,585,56,265.5570706118409,,,,,,,2026-04-30T21:51:12.890861+00:00,False,"argument_mismatch: Argument mismatch for 'ingredients': predicted ['pasta', 'cheese', 'tomatoes', 'basil'], gold [['pasta', 'cheese'], ['cheese', 'pasta']].","[{""name"": ""recipe_search"", ""arguments"": {""dietary_restriction"": ""Vegetarian"", ""ingredients"": [""pasta"", ""cheese"", ""tomatoes"", ""basil""], ""servings"": 2}}]","[{""name"": ""recipe_search"", ""arguments"": {""dietary_restriction"": [""Vegetarian""], ""ingredients"": [[""pasta"", ""cheese""], [""cheese"", ""pasta""]], ""servings"": [2]}}]",argument_mismatch
+multiple_58,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""lawyer.search"", ""arguments"": {""location"": ""Los Angeles, CA"", ""expertise"": ""Marriage""}}
+</tool_call>",0.2476949580013752,396,37,149.37728364981325,,,,,,,2026-04-30T21:51:14.108177+00:00,False,"argument_mismatch: Argument mismatch for 'expertise': predicted Marriage, gold ['Divorce'].","[{""name"": ""lawyer.search"", ""arguments"": {""location"": ""Los Angeles, CA"", ""expertise"": ""Marriage""}}]","[{""name"": ""lawyer.search"", ""arguments"": {""location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""expertise"": [""Divorce""]}}]",argument_mismatch
+multiple_0,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""triangle_properties.get"", ""arguments"": {""side1"": 5, ""side2"": 4, ""side3"": 3, ""get_area"": true, ""get_perimeter"": true, ""get_angles"": true}}
+</tool_call>",0.3552553750341758,650,60,168.89258887139417,,,,,,,2026-04-30T21:51:15.362876+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""triangle_properties.get"", ""arguments"": {""side1"": 5, ""side2"": 4, ""side3"": 3, ""get_area"": true, ""get_perimeter"": true, ""get_angles"": true}}]","[{""name"": ""triangle_properties.get"", ""arguments"": {""side1"": [5], ""side2"": [4], ""side3"": [3], ""get_area"": ["""", true], ""get_perimeter"": ["""", true], ""get_angles"": ["""", true]}}]",correct
+multiple_135,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}
+</tool_call>",0.1737125830259174,448,45,259.0485917378025,,,,,,,2026-04-30T21:51:16.723108+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_case_info"", ""arguments"": {""docket"": ""2022/AL2562"", ""court"": ""California"", ""info_type"": ""victim""}}]","[{""name"": ""get_case_info"", ""arguments"": {""docket"": [""2022/AL2562""], ""court"": [""California"", ""CA""], ""info_type"": [""victim""]}}]",correct
+multiple_120,multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""light_travel_time"", ""arguments"": {""distance_in_light_years"": ""4"", ""speed_of_light"": ""299792458""}}
+</tool_call>",0.19490087497979403,890,39,200.1017183942517,,,,,,,2026-04-30T21:51:17.902447+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""light_travel_time"", ""arguments"": {""distance_in_light_years"": ""4"", ""speed_of_light"": ""299792458""}}]","[{""name"": ""light_travel_time"", ""arguments"": {""distance_in_light_years"": [4], ""speed_of_light"": [299792458, """"]}}]",correct
+parallel_68,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_area"", ""arguments"": {""base"": 12, ""height"": 15, ""unit"": ""m""}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_area"", ""arguments"": {""base"": 18, ""height"": 24, ""unit"": ""m""}}
+</tool_call>
+<tool_call>
+{""name"": ""add"", ""arguments"": {""a"": ""result1"", ""b"": ""result2""}}
+</tool_call>",0.2326385409105569,355,104,447.045444804372,,,,,,,2026-04-30T21:51:19.104881+00:00,False,"wrong_call_count: predicted 3, gold 2.","[{""name"": ""calculate_area"", ""arguments"": {""base"": 12, ""height"": 15, ""unit"": ""m""}}, {""name"": ""calculate_area"", ""arguments"": {""base"": 18, ""height"": 24, ""unit"": ""m""}}, {""name"": ""add"", ""arguments"": {""a"": ""result1"", ""b"": ""result2""}}]","[{""name"": ""calculate_area"", ""arguments"": {""base"": [12], ""height"": [15], ""unit"": [""m"", ""meters"", ""meter""]}}, {""name"": ""calculate_area"", ""arguments"": {""base"": [18], ""height"": [24], ""unit"": [""m"", ""meters"", ""meter""]}}]",wrong_call_count
+parallel_57,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Sheraton Hotel"", ""location"": ""New York"", ""check_in"": ""2022-05-01"", ""check_out"": ""2022-05-05"", ""adults"": 2, ""children"": 1}}
+</tool_call>
+
+<tool_call>
+{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Marriott"", ""location"": ""Los Angeles"", ""check_in"": ""2022-06-01"", ""check_out"": ""2022-06-10"", ""adults"": 1, ""children"": 2}}
+</tool_call>",0.2525435839779675,454,144,570.1986078274825,,,,,,,2026-04-30T21:51:20.350106+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Sheraton Hotel"", ""location"": ""New York"", ""check_in"": ""2022-05-01"", ""check_out"": ""2022-05-05"", ""adults"": 2, ""children"": 1}}, {""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": ""Marriott"", ""location"": ""Los Angeles"", ""check_in"": ""2022-06-01"", ""check_out"": ""2022-06-10"", ""adults"": 1, ""children"": 2}}]","[{""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": [""Sheraton Hotel"", ""Sheraton""], ""location"": [""New York"", ""New York, NY"", ""New York City"", ""NYC""], ""check_in"": [""2022-05-01"", ""05/01/2022"", ""May 1, 2022""], ""check_out"": [""2022-05-05"", ""05/05/2022"", ""May 5, 2022""], ""adults"": [2], ""children"": [1]}}, {""name"": ""hotel_booking.book"", ""arguments"": {""hotel_name"": [""Marriott""], ""location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""check_in"": [""2022-06-01"", ""06/01/2022"", ""June 1, 2022""], ""check_out"": [""2022-06-10"", ""06/10/2022"", ""June 10, 2022""], ""adults"": [1], ""children"": [2]}}]",correct
+parallel_99,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""melting"", ""substance"": ""water""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""freezing"", ""substance"": ""water""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""vaporization"", ""substance"": ""water""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""condensation"", ""substance"": ""water""}}
+</tool_call>",0.34169366594869643,389,166,485.8152683021173,,,,,,,2026-04-30T21:51:21.609125+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""melting"", ""substance"": ""water""}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""freezing"", ""substance"": ""water""}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""vaporization"", ""substance"": ""water""}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": 500, ""phase_transition"": ""condensation"", ""substance"": ""water""}}]","[{""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""melting""], ""substance"": [""water"", """"]}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""freezing""], ""substance"": [""water"", """"]}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""vaporization""], ""substance"": [""water"", """"]}}, {""name"": ""thermo.calculate_energy"", ""arguments"": {""mass"": [500], ""phase_transition"": [""condensation""], ""substance"": [""water"", """"]}}]",correct
+parallel_129,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""create_histogram"", ""arguments"": {""data"": ""[12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]"", ""bins"": ""5""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""create_histogram"", ""arguments"": {""data"": ""[32, 35, 31, 34, 38, 39, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]"", ""bins"": ""5""}}
+</tool_call>",0.314761541900225,410,175,555.97643518811,,,,,,,2026-04-30T21:51:22.966225+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""create_histogram"", ""arguments"": {""data"": ""[12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]"", ""bins"": ""5""}}, {""name"": ""create_histogram"", ""arguments"": {""data"": ""[32, 35, 31, 34, 38, 39, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]"", ""bins"": ""5""}}]","[{""name"": ""create_histogram"", ""arguments"": {""data"": [[12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]], ""bins"": [5]}}, {""name"": ""create_histogram"", ""arguments"": {""data"": [[32, 35, 31, 34, 38, 39, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]], ""bins"": [5]}}]",correct
+parallel_190,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Shortest""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Shortest""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Scenic""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Scenic""}}
+</tool_call>",0.26997712498996407,309,177,655.611100409265,,,,,,,2026-04-30T21:51:24.288766+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Shortest""}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Shortest""}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""New York City"", ""end_location"": ""Los Angeles"", ""route_preference"": ""Scenic""}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""Miami"", ""route_preference"": ""Scenic""}}]","[{""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""New York City"", ""NYC""], ""end_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""route_preference"": [""Shortest""]}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""end_location"": [""Miami""], ""route_preference"": [""Shortest""]}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""New York City"", ""NYC""], ""end_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""route_preference"": [""Scenic""]}}, {""name"": ""calculate_shortest_distance"", ""arguments"": {""start_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""end_location"": [""Miami""], ""route_preference"": [""Scenic""]}}]",correct
+parallel_183,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": ""5"", ""y"": ""7""}}
+</tool_call>
+<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": ""10"", ""y"": ""15""}}
+</tool_call>
+<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": ""20"", ""y"": ""25""}}
+</tool_call>
+<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": ""10"", ""y"": ""15""}}
+</tool_call>
+<tool_call>
+{""name"": ""math.hypot"", ""arguments"": {""x"": ""20"", ""y"": ""25""}}
+</tool_call>",0.21601591701619327,367,161,745.3154481571416,,,,,,,2026-04-30T21:51:25.567052+00:00,False,"wrong_call_count: predicted 5, gold 3.","[{""name"": ""math.hypot"", ""arguments"": {""x"": ""5"", ""y"": ""7""}}, {""name"": ""math.hypot"", ""arguments"": {""x"": ""10"", ""y"": ""15""}}, {""name"": ""math.hypot"", ""arguments"": {""x"": ""20"", ""y"": ""25""}}, {""name"": ""math.hypot"", ""arguments"": {""x"": ""10"", ""y"": ""15""}}, {""name"": ""math.hypot"", ""arguments"": {""x"": ""20"", ""y"": ""25""}}]","[{""name"": ""math.hypot"", ""arguments"": {""x"": [5], ""y"": [7], ""z"": ["""", 0]}}, {""name"": ""math.hypot"", ""arguments"": {""x"": [10], ""y"": [15], ""z"": ["""", 0]}}, {""name"": ""math.hypot"", ""arguments"": {""x"": [20], ""y"": [25], ""z"": ["""", 0]}}]",wrong_call_count
+parallel_162,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 4, ""total_outcomes"": 52, ""format_as_ratio"": False}}
+</tool_call>
+
+<tool_call>
+{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 13, ""total_outcomes"": 52, ""format_as_ratio"": False}}
+</tool_call>
+
+<tool_call>
+{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": 26, ""total_outcomes"": 52, ""format_as_ratio"": True}}
+</tool_call>",0.3138666250742972,406,127,404.63046993268904,,,,,,,2026-04-30T21:51:26.790009+00:00,False,parse_failure: Could not parse predicted tool calls.,null,"[{""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": [4], ""total_outcomes"": [52], ""format_as_ratio"": [false, """"]}}, {""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": [13], ""total_outcomes"": [52], ""format_as_ratio"": [false, """"]}}, {""name"": ""probability_of_event"", ""arguments"": {""success_outcomes"": [26], ""total_outcomes"": [52], ""format_as_ratio"": [true]}}]",parse_failure
+parallel_188,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""New York"", ""end_location"": ""Los Angeles"", ""mode"": ""driving""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""San Francisco"", ""mode"": ""bicycling""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""New York"", ""mode"": ""transit""}}
+</tool_call>",0.4090434580575675,345,128,312.9251855238953,,,,,,,2026-04-30T21:51:28.110322+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""New York"", ""end_location"": ""Los Angeles"", ""mode"": ""driving""}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""Los Angeles"", ""end_location"": ""San Francisco"", ""mode"": ""bicycling""}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""New York"", ""mode"": ""transit""}}]","[{""name"": ""get_traffic_info"", ""arguments"": {""start_location"": [""New York"", ""New York, NY"", ""NYC""], ""end_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""mode"": [""driving"", """"]}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""end_location"": [""San Francisco"", ""SF""], ""mode"": [""bicycling""]}}, {""name"": ""get_traffic_info"", ""arguments"": {""start_location"": [""San Francisco"", ""SF""], ""end_location"": [""New York"", ""New York, NY"", ""NYC""], ""mode"": [""transit""]}}]",correct
+parallel_41,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""San Francisco, CA"", ""instruments"": ""['Yamaha acoustic guitar', 'Kawai piano']""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""Chicago, IL"", ""instruments"": ""['Yamaha acoustic guitar', 'Kawai piano']""}}
+</tool_call>",0.23181316698901355,287,94,405.4989680739532,,,,,,,2026-04-30T21:51:29.525597+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""San Francisco, CA"", ""instruments"": ""['Yamaha acoustic guitar', 'Kawai piano']""}}, {""name"": ""find_music_instrument_store"", ""arguments"": {""location"": ""Chicago, IL"", ""instruments"": ""['Yamaha acoustic guitar', 'Kawai piano']""}}]","[{""name"": ""find_music_instrument_store"", ""arguments"": {""location"": [""San Francisco, CA"", ""San Francisco, CA"", ""San Francisco, California""], ""instruments"": [[""Yamaha Acoustic Guitar"", ""Kawai Piano""], [""Kawai Piano"", ""Yamaha Acoustic Guitar""], [""Yamaha acoustic guitar"", ""Kawai piano""], [""Kawai piano"", ""Yamaha acoustic guitar""]]}}, {""name"": ""find_music_instrument_store"", ""arguments"": {""location"": [""Chicago, IL"", ""Chicago, Illinois"", ""Chicago, IL.""], ""instruments"": [[""Yamaha Acoustic Guitar"", ""Kawai Piano""], [""Kawai Piano"", ""Yamaha Acoustic Guitar""], [""Yamaha acoustic guitar"", ""Kawai piano""], [""Kawai piano"", ""Yamaha acoustic guitar""]]}}]",correct
+parallel_60,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 5}}
+</tool_call>
+
+<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 7}}
+</tool_call>
+
+<tool_call>
+{""name"": ""math.factorial"", ""arguments"": {""number"": 9}}
+</tool_call>",0.3159729589242488,221,76,240.52691172924136,,,,,,,2026-04-30T21:51:30.764950+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""math.factorial"", ""arguments"": {""number"": 5}}, {""name"": ""math.factorial"", ""arguments"": {""number"": 7}}, {""name"": ""math.factorial"", ""arguments"": {""number"": 9}}]","[{""name"": ""math.factorial"", ""arguments"": {""number"": [5]}}, {""name"": ""math.factorial"", ""arguments"": {""number"": [7]}}, {""name"": ""math.factorial"", ""arguments"": {""number"": [9]}}]",correct
+parallel_71,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_derivative"", ""arguments"": {""function"": ""3x^3 - 2x^2 + 5x - 7"", ""x_value"": ""4""}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_derivative"", ""arguments"": {""function"": ""3x^3 - 2x^2 + 5x - 7"", ""x_value"": ""2""}}
+</tool_call>",0.2850006250664592,306,95,333.33260226305464,,,,,,,2026-04-30T21:51:32.089223+00:00,False,"argument_mismatch: Argument mismatch for 'function': predicted 3x^3 - 2x^2 + 5x - 7, gold ['3x**3 - 2x**2 + 5x - 7', 'lambda x: 3x**3 - 2x**2 + 5x - 7'].","[{""name"": ""calculate_derivative"", ""arguments"": {""function"": ""3x^3 - 2x^2 + 5x - 7"", ""x_value"": ""4""}}, {""name"": ""calculate_derivative"", ""arguments"": {""function"": ""3x^3 - 2x^2 + 5x - 7"", ""x_value"": ""2""}}]","[{""name"": ""calculate_derivative"", ""arguments"": {""function"": [""3x**3 - 2x**2 + 5x - 7"", ""lambda x: 3x**3 - 2x**2 + 5x - 7""], ""x_value"": [4]}}, {""name"": ""calculate_derivative"", ""arguments"": {""function"": [""9x**2 - 4x + 5"", ""lambda x: 9x**2 - 4x + 5""], ""x_value"": [2]}}]",argument_mismatch
+parallel_156,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 100, ""max_depth"": 10, ""data"": ""data_random_forest""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 200, ""max_depth"": 20, ""data"": ""data_random_forest""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 300, ""max_depth"": 30, ""data"": ""data_random_forest""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 400, ""max_depth"": 40, ""data"": ""data_random_forest""}}
+</tool_call>",0.4812718329485506,424,173,359.4642116080253,,,,,,,2026-04-30T21:51:33.381048+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 100, ""max_depth"": 10, ""data"": ""data_random_forest""}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 200, ""max_depth"": 20, ""data"": ""data_random_forest""}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 300, ""max_depth"": 30, ""data"": ""data_random_forest""}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": 400, ""max_depth"": 40, ""data"": ""data_random_forest""}}]","[{""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [100], ""max_depth"": [10], ""data"": [""data_random_forest""]}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [200], ""max_depth"": [20], ""data"": [""data_random_forest""]}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [300], ""max_depth"": [30], ""data"": [""data_random_forest""]}}, {""name"": ""random_forest.train"", ""arguments"": {""n_estimators"": [400], ""max_depth"": [40], ""data"": [""data_random_forest""]}}]",correct
+parallel_11,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""New York"", ""size"": 3000}}
+</tool_call>
+
+<tool_call>
+{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""Los Angeles"", ""size"": 4000}}
+</tool_call>",0.31057941704057157,263,69,222.1653986522436,,,,,,,2026-04-30T21:51:34.866043+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""New York"", ""size"": 3000}}, {""name"": ""ml.predict_house_price"", ""arguments"": {""location"": ""Los Angeles"", ""size"": 4000}}]","[{""name"": ""ml.predict_house_price"", ""arguments"": {""location"": [""New York"", ""New York, NY"", ""NYC""], ""size"": [3000]}}, {""name"": ""ml.predict_house_price"", ""arguments"": {""location"": [""Los Angeles"", ""Los Angeles, CA"", ""LA""], ""size"": [4000]}}]",correct
+parallel_185,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2021}}
+</tool_call>
+
+<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2021}}
+</tool_call>
+
+<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2023}}
+</tool_call>
+
+<tool_call>
+{""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2023}}
+</tool_call>",0.2973613329231739,318,161,541.4288348027949,,,,,,,2026-04-30T21:51:36.183245+00:00,False,"argument_mismatch: Argument mismatch for 'species': predicted African Elephant, gold ['African Elephants'].","[{""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2021}}, {""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2021}}, {""name"": ""estimate_population"", ""arguments"": {""species"": ""Bengal Tiger"", ""country"": ""India"", ""year"": 2023}}, {""name"": ""estimate_population"", ""arguments"": {""species"": ""African Elephant"", ""country"": ""Kenya"", ""year"": 2023}}]","[{""name"": ""estimate_population"", ""arguments"": {""species"": [""Bengal Tigers"", ""Bengal Tiger""], ""country"": [""India""], ""year"": [2021]}}, {""name"": ""estimate_population"", ""arguments"": {""species"": [""African Elephants""], ""country"": [""Kenya""], ""year"": [2021]}}, {""name"": ""estimate_population"", ""arguments"": {""species"": [""Bengal Tigers"", ""Bengal Tiger""], ""country"": [""India""], ""year"": [""""]}}, {""name"": ""estimate_population"", ""arguments"": {""species"": [""African Elephants""], ""country"": [""Kenya""], ""year"": [2023]}}]",argument_mismatch
+parallel_118,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""six_months""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""year""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""five_years""}}
+</tool_call>",0.29632929095532745,291,120,404.9549054470298,,,,,,,2026-04-30T21:51:37.487485+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""six_months""}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""year""}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": ""Amazon rainforest"", ""time_frame"": ""five_years""}}]","[{""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": [""Amazon rainforest""], ""time_frame"": [""six_months""]}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": [""Amazon rainforest""], ""time_frame"": [""year""]}}, {""name"": ""ecology_data.precipitation_stats"", ""arguments"": {""location"": [""Amazon rainforest""], ""time_frame"": [""five_years""]}}]",correct
+parallel_105,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 300, ""volume"": 2.5, ""gas"": ""air""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 350, ""volume"": 2.5, ""gas"": ""air""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 300, ""volume"": 1.5, ""gas"": ""air""}}
+</tool_call>",0.4643780409824103,361,118,254.10331580357737,,,,,,,2026-04-30T21:51:38.790678+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 300, ""volume"": 2.5, ""gas"": ""air""}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 350, ""volume"": 2.5, ""gas"": ""air""}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": 300, ""volume"": 1.5, ""gas"": ""air""}}]","[{""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": [300], ""volume"": [2.5], ""gas"": [""air"", """"]}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": [350], ""volume"": [2.5], ""gas"": [""air"", """"]}}, {""name"": ""calc_heat_capacity"", ""arguments"": {""temp"": [300], ""volume"": [1.5], ""gas"": [""air"", """"]}}]",correct
+parallel_171,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 1000000, ""shareholder_equity"": 5000000, ""dividends_paid"": 200000}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000}}",0.3417275419924408,370,88,257.51509371154697,,,,,,,2026-04-30T21:51:40.261941+00:00,False,"wrong_call_count: predicted 1, gold 2.","[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 1000000, ""shareholder_equity"": 5000000, ""dividends_paid"": 200000}}]","[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": [1000000], ""shareholder_equity"": [5000000], ""dividends_paid"": [200000]}}, {""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": [2000000], ""shareholder_equity"": [10000000], ""dividends_paid"": [0, """"]}}]",wrong_call_count
+parallel_44,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Berlin"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}
+</tool_call>
+
+<tool_call>
+{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Paris"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}
+</tool_call>",0.4051985840778798,380,97,239.38879307968276,,,,,,,2026-04-30T21:51:41.613221+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Berlin"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""Paris"", ""date"": ""next Friday"", ""genre"": ""Classical"", ""amenities"": [""Parking""]}}]","[{""name"": ""concert.find_nearby"", ""arguments"": {""location"": [""Berlin""], ""date"": [""next Friday""], ""genre"": [""Classical"", ""classical""], ""amenities"": [[""Parking""], """"]}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": [""Paris""], ""date"": [""next Friday""], ""genre"": [""Classical"", ""classical""], ""amenities"": [[""Parking""], """"]}}]",correct
+parallel_110,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP"", ""organelle"": ""mitochondria"", ""specific_function"": ""true""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""DNA"", ""organelle"": ""nucleus"", ""specific_function"": ""true""}}
+</tool_call>",0.3400444999570027,338,92,270.5528247380359,,,,,,,2026-04-30T21:51:43.024966+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""ATP"", ""organelle"": ""mitochondria"", ""specific_function"": ""true""}}, {""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": ""DNA"", ""organelle"": ""nucleus"", ""specific_function"": ""true""}}]","[{""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": [""ATP""], ""organelle"": [""mitochondria""], ""specific_function"": [true]}}, {""name"": ""cell_biology.function_lookup"", ""arguments"": {""molecule"": [""DNA""], ""organelle"": [""nucleus""], ""specific_function"": [true]}}]",correct
+parallel_153,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset1"", ""max_depth"": 10, ""n_estimators"": 100}}
+</tool_call>
+
+<tool_call>
+{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset2"", ""max_depth"": 20, ""n_estimators"": 200}}
+</tool_call>",59.47015804203693,378,85,1.4292882816944443,,,,,,,2026-04-30T21:51:44.372576+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset1"", ""max_depth"": 10, ""n_estimators"": 100}}, {""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": ""dataset2"", ""max_depth"": 20, ""n_estimators"": 200}}]","[{""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": [""dataset1""], ""max_depth"": [10], ""n_estimators"": [100]}}, {""name"": ""train_random_forest_classifier"", ""arguments"": {""dataset"": [""dataset2""], ""max_depth"": [20], ""n_estimators"": [200]}}]",correct
+parallel_8,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""New York City"", ""type"": ""city"", ""year"": 2020}}
+</tool_call>
+
+<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Los Angeles"", ""type"": ""city"", ""year"": 2020}}
+</tool_call>
+
+<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Alaska"", ""type"": ""state"", ""year"": 2020}}
+</tool_call>
+
+<tool_call>
+{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""USA"", ""type"": ""country"", ""year"": 2020}}
+</tool_call>",0.2545280419290066,297,169,663.9739917031923,,,,,,,2026-04-30T21:52:44.846954+00:00,False,"argument_mismatch: Argument mismatch for 'year': predicted 2020, gold ['', 2000].","[{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""New York City"", ""type"": ""city"", ""year"": 2020}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Los Angeles"", ""type"": ""city"", ""year"": 2020}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""Alaska"", ""type"": ""state"", ""year"": 2020}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": ""USA"", ""type"": ""country"", ""year"": 2020}}]","[{""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""New York City"", ""NY"", ""New York City, NY"", ""NYC""], ""type"": [""city""], ""year"": ["""", 2000]}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""Los Angeles"", ""Los Angeles, CA"", ""CA"", ""Los Angeles, CA""], ""type"": [""city""], ""year"": ["""", 2000]}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""Alaska""], ""type"": [""state""], ""year"": ["""", 2000]}}, {""name"": ""database_us_census.get_population"", ""arguments"": {""area"": [""USA"", ""United States"", ""United States of America""], ""type"": [""country""], ""year"": ["""", 2000]}}]",argument_mismatch
+parallel_123,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""A""]}}
+</tool_call>
+
+<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""T""]}}
+</tool_call>
+
+<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""C""]}}
+</tool_call>
+
+<tool_call>
+{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""G""]}}
+</tool_call>",0.4318758751032874,342,133,307.9588550024743,,,,,,,2026-04-30T21:52:46.116414+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""A""]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""T""]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""C""]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": 500, ""preferences"": [""G""]}}]","[{""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""A""]]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""T""]]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""C""]]}}, {""name"": ""generate_DNA_sequence"", ""arguments"": {""length"": [500], ""preferences"": [[""G""]]}}]",correct
+parallel_163,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.6}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.5}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 15, ""num_success"": 6, ""prob_success"": 0.5}}
+</tool_call>",0.3650202499702573,402,130,356.14462488202423,,,,,,,2026-04-30T21:52:47.551313+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.6}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 10, ""num_success"": 6, ""prob_success"": 0.5}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": 15, ""num_success"": 6, ""prob_success"": 0.5}}]","[{""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": [10], ""num_success"": [6], ""prob_success"": [0.6]}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": [10], ""num_success"": [6], ""prob_success"": [0.5]}}, {""name"": ""calc_binomial_prob"", ""arguments"": {""num_trials"": [15], ""num_success"": [6], ""prob_success"": [0.5]}}]",correct
+parallel_83,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 0, ""acceleration"": 5, ""time"": 10}}
+</tool_call>
+
+<tool_call>
+{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 10, ""acceleration"": 7, ""time"": 8}}
+</tool_call>
+
+<tool_call>
+{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 20, ""acceleration"": 4, ""time"": 12}}
+</tool_call>",0.28634633298497647,403,115,401.6115687642964,,,,,,,2026-04-30T21:52:48.917810+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 0, ""acceleration"": 5, ""time"": 10}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 10, ""acceleration"": 7, ""time"": 8}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": 20, ""acceleration"": 4, ""time"": 12}}]","[{""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": [0], ""acceleration"": [5], ""time"": [10]}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": [10], ""acceleration"": [7], ""time"": [8]}}, {""name"": ""final_velocity"", ""arguments"": {""initial_velocity"": [20], ""acceleration"": [4], ""time"": [12]}}]",correct
+parallel_12,parallel,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""gini"", ""max_depth"": 5, ""random_state"": 1}}
+</tool_call>
+
+<tool_call>
+{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""entropy"", ""max_depth"": 10, ""random_state"": 1}}
+</tool_call>",0.20402629196178168,335,86,421.51430177493773,,,,,,,2026-04-30T21:52:50.210512+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""gini"", ""max_depth"": 5, ""random_state"": 1}}, {""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": ""entropy"", ""max_depth"": 10, ""random_state"": 1}}]","[{""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": [""gini""], ""max_depth"": [5], ""random_state"": [1]}}, {""name"": ""model.DecisionTreeClassifier"", ""arguments"": {""criterion"": [""entropy""], ""max_depth"": [10], ""random_state"": [1]}}]",correct
+parallel_multiple_159,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000, ""dividends_paid"": 500000}}
+</tool_call>
+<tool_call>
+{""name"": ""get_song_lyrics"", ""arguments"": {""song_title"": ""Bohemian Rhapsody"", ""artist_name"": ""Queen"", ""lang"": ""English""}}
+</tool_call>
+<tool_call>
+{""name"": ""law_case_search.find_historical"", ""arguments"": {""subject"": ""fraud"", ""from_year"": 1990, ""to_year"": 2000}}
+</tool_call>
+<tool_call>
+{""name"": ""public_library.find_nearby"", ""arguments"": {""location"": ""Boston, MA"", ""facilities"": [""Reading Room"", ""Wi-Fi""]}}
+</tool_call>",0.4573998339474201,994,183,400.0875960550448,,,,,,,2026-04-30T21:52:51.419851+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": 2000000, ""shareholder_equity"": 10000000, ""dividends_paid"": 500000}}, {""name"": ""get_song_lyrics"", ""arguments"": {""song_title"": ""Bohemian Rhapsody"", ""artist_name"": ""Queen"", ""lang"": ""English""}}, {""name"": ""law_case_search.find_historical"", ""arguments"": {""subject"": ""fraud"", ""from_year"": 1990, ""to_year"": 2000}}, {""name"": ""public_library.find_nearby"", ""arguments"": {""location"": ""Boston, MA"", ""facilities"": [""Reading Room"", ""Wi-Fi""]}}]","[{""name"": ""calculate_return_on_equity"", ""arguments"": {""net_income"": [2000000], ""shareholder_equity"": [10000000], ""dividends_paid"": [500000]}}, {""name"": ""get_song_lyrics"", ""arguments"": {""song_title"": [""Bohemian Rhapsody""], ""artist_name"": [""Queen""], ""lang"": [""English"", """"]}}, {""name"": ""law_case_search.find_historical"", ""arguments"": {""subject"": [""fraud""], ""from_year"": [1990], ""to_year"": [2000]}}, {""name"": ""public_library.find_nearby"", ""arguments"": {""location"": [""Boston, MA"", ""Boston,MA"", ""Boston""], ""facilities"": [[""Reading Room"", ""Wi-Fi""], [""Wi-Fi"", ""Reading Room""]]}}]",correct
+parallel_multiple_108,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""five_factor_model.analyse"", ""arguments"": {""talkative"": true, ""nervous"": false, ""artistic_interests"": true, ""lazy"": false, ""forgiving"": true}}
+</tool_call>
+
+<tool_call>
+{""name"": ""MBTI.analyse"", ""arguments"": {""thinking_vs_feeling"": ""feeling"", ""introverted_vs_extroverted"": ""extroverted"", ""judging_vs_perceiving"": ""perceiving"", ""sensing_vs_intuition"": ""intuition""}}
+</tool_call>",0.3139986669411883,711,121,385.35195444846653,,,,,,,2026-04-30T21:52:52.886544+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""five_factor_model.analyse"", ""arguments"": {""talkative"": true, ""nervous"": false, ""artistic_interests"": true, ""lazy"": false, ""forgiving"": true}}, {""name"": ""MBTI.analyse"", ""arguments"": {""thinking_vs_feeling"": ""feeling"", ""introverted_vs_extroverted"": ""extroverted"", ""judging_vs_perceiving"": ""perceiving"", ""sensing_vs_intuition"": ""intuition""}}]","[{""name"": ""five_factor_model.analyse"", ""arguments"": {""talkative"": [true], ""nervous"": [false], ""artistic_interests"": [true], ""lazy"": [false], ""forgiving"": [true]}}, {""name"": ""MBTI.analyse"", ""arguments"": {""thinking_vs_feeling"": [""feeling"", ""F""], ""introverted_vs_extroverted"": [""extroverted"", ""E""], ""judging_vs_perceiving"": [""perceiving"", ""P""], ""sensing_vs_intuition"": [""intuition"", ""N""]}}]",correct
+parallel_multiple_196,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""recipe_info.get_calories"", ""arguments"": {""website"": ""AllRecipes"", ""recipe"": ""Chicken Alfredo"", ""optional_meal_time"": ""Dinner""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""get_stock_price"", ""arguments"": {""company_names"": ""['Apple', 'Microsoft', 'Tesla']""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""get_team_ranking"", ""arguments"": {""team_name"": ""Brazil"", ""year"": 2018, ""gender"": ""men""}}
+</tool_call>",0.29332887497730553,646,121,412.5062696584563,,,,,,,2026-04-30T21:52:54.212415+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""recipe_info.get_calories"", ""arguments"": {""website"": ""AllRecipes"", ""recipe"": ""Chicken Alfredo"", ""optional_meal_time"": ""Dinner""}}, {""name"": ""get_stock_price"", ""arguments"": {""company_names"": ""['Apple', 'Microsoft', 'Tesla']""}}, {""name"": ""get_team_ranking"", ""arguments"": {""team_name"": ""Brazil"", ""year"": 2018, ""gender"": ""men""}}]","[{""name"": ""recipe_info.get_calories"", ""arguments"": {""website"": [""AllRecipes""], ""recipe"": [""Chicken Alfredo""], ""optional_meal_time"": [""Dinner"", """"]}}, {""name"": ""get_stock_price"", ""arguments"": {""company_names"": [[""Apple"", ""Microsoft"", ""Tesla""]]}}, {""name"": ""get_team_ranking"", ""arguments"": {""team_name"": [""Brazil""], ""year"": [2018], ""gender"": [""men"", """"]}}]",correct
+parallel_multiple_64,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""African Elephant"", ""ecosystem"": ""Serengeti ecosystem"", ""location"": ""Serengeti"", ""timeframe"": ""5""}}
+</tool_call>
+<tool_call>
+{""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""African Elephant"", ""location"": ""Serengeti"", ""duration"": ""10""}}
+</tool_call>
+<tool_call>
+{""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""Bengal Tiger"", ""ecosystem"": ""Sundarbans ecosystem"", ""location"": ""Sundarbans"", ""timeframe"": ""3""}}
+</tool_call>
+<tool_call>
+{""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""Bengal Tiger"", ""location"": ""Sundarbans"", ""duration"": ""7""}}
+</tool_call>",0.3453667078865692,572,211,610.9448165724763,,,,,,,2026-04-30T21:52:55.516434+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""African Elephant"", ""ecosystem"": ""Serengeti ecosystem"", ""location"": ""Serengeti"", ""timeframe"": ""5""}}, {""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""African Elephant"", ""location"": ""Serengeti"", ""duration"": ""10""}}, {""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": ""Bengal Tiger"", ""ecosystem"": ""Sundarbans ecosystem"", ""location"": ""Sundarbans"", ""timeframe"": ""3""}}, {""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": ""Bengal Tiger"", ""location"": ""Sundarbans"", ""duration"": ""7""}}]","[{""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": [""African Elephant""], ""location"": [""Serengeti"", ""Serengeti ecosystem""], ""duration"": [10]}}, {""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": [""African Elephant""], ""ecosystem"": [""Serengeti"", ""Serengeti ecosystem""], ""location"": [""Serengeti""], ""timeframe"": [5, """"]}}, {""name"": ""wildlife_population.assess_growth"", ""arguments"": {""species"": [""Bengal Tiger""], ""location"": [""Sundarbans"", ""Sundarbans ecosystem""], ""duration"": [7]}}, {""name"": ""ecological_impact.analyze"", ""arguments"": {""species"": [""Bengal Tiger"", ""Tiger""], ""ecosystem"": [""Sundarbans"", ""Sundarbans ecosystem""], ""location"": [""Sundarbans""], ""timeframe"": [3]}}]",correct
+parallel_multiple_46,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""museum.get_hours"", ""arguments"": {""museum_name"": ""Louvre Museum""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""museum.get_waiting_time"", ""arguments"": {""museum_name"": ""Louvre Museum""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""location.get_travel_time"", ""arguments"": {""destination"": ""Louvre Museum"", ""mode"": ""Driving""}}
+</tool_call>",0.3226167500251904,524,96,297.5666948244447,,,,,,,2026-04-30T21:52:56.873114+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""museum.get_hours"", ""arguments"": {""museum_name"": ""Louvre Museum""}}, {""name"": ""museum.get_waiting_time"", ""arguments"": {""museum_name"": ""Louvre Museum""}}, {""name"": ""location.get_travel_time"", ""arguments"": {""destination"": ""Louvre Museum"", ""mode"": ""Driving""}}]","[{""name"": ""museum.get_hours"", ""arguments"": {""museum_name"": [""Louvre Museum"", ""Louvre""]}}, {""name"": ""museum.get_waiting_time"", ""arguments"": {""museum_name"": [""Louvre Museum"", ""Louvre""], ""day"": ["""", ""Monday""]}}, {""name"": ""location.get_travel_time"", ""arguments"": {""destination"": [""Louvre Museum"", ""Louvre""], ""mode"": [""Driving"", """"]}}]",correct
+parallel_multiple_1,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""area_rectangle.calculate"", ""arguments"": {""length"": 7, ""breadth"": 3}}
+</tool_call>
+
+<tool_call>
+{""name"": ""area_circle.calculate"", ""arguments"": {""radius"": 5}}
+</tool_call>",0.25975370802916586,459,58,223.28843903736535,,,,,,,2026-04-30T21:52:58.202937+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""area_rectangle.calculate"", ""arguments"": {""length"": 7, ""breadth"": 3}}, {""name"": ""area_circle.calculate"", ""arguments"": {""radius"": 5}}]","[{""name"": ""area_rectangle.calculate"", ""arguments"": {""length"": [7.0], ""breadth"": [3.0]}}, {""name"": ""area_circle.calculate"", ""arguments"": {""radius"": [5.0]}}]",correct
+parallel_multiple_167,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""get_collectables_in_season"", ""arguments"": {""game_name"": ""Animal Crossing"", ""season"": ""Summer"", ""item_type"": ""fish""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""game_score.highest"", ""arguments"": {""game"": ""Fortnite"", ""platform"": ""Playstation"", ""region"": ""Asia""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2018}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_binomial_probability"", ""arguments"": {""number_of_trials"": 10, ""number_of_successes"": 3, ""probability_of_success"": 0.7}}
+</tool_call>",0.4935622080229223,922,165,334.3043639036824,,,,,,,2026-04-30T21:52:59.468904+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""get_collectables_in_season"", ""arguments"": {""game_name"": ""Animal Crossing"", ""season"": ""Summer"", ""item_type"": ""fish""}}, {""name"": ""game_score.highest"", ""arguments"": {""game"": ""Fortnite"", ""platform"": ""Playstation"", ""region"": ""Asia""}}, {""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": ""Apple Inc."", ""year"": 2018}}, {""name"": ""calculate_binomial_probability"", ""arguments"": {""number_of_trials"": 10, ""number_of_successes"": 3, ""probability_of_success"": 0.7}}]","[{""name"": ""get_collectables_in_season"", ""arguments"": {""game_name"": [""Animal Crossing""], ""season"": [""Summer""], ""item_type"": [""fish""]}}, {""name"": ""game_score.highest"", ""arguments"": {""game"": [""Fortnite""], ""platform"": [""Playstation"", ""PS""], ""region"": [""Asia""]}}, {""name"": ""lawsuit_details.find"", ""arguments"": {""company_name"": [""Apple Inc.""], ""year"": [2018], ""case_type"": [""""]}}, {""name"": ""calculate_binomial_probability"", ""arguments"": {""number_of_trials"": [10], ""number_of_successes"": [3], ""probability_of_success"": [0.7]}}]",correct
+parallel_multiple_140,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""calculate_density"", ""arguments"": {""mass"": 10, ""volume"": 2}}
+</tool_call>
+<tool_call>
+{""name"": ""calculate_density"", ""arguments"": {""mass"": 5, ""volume"": 1, ""unit"": ""g/cm\u00b3""}}
+</tool_call>
+<tool_call>
+{""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""red"", ""color2"": ""blue"", ""lightness"": 70}}
+</tool_call>
+<tool_call>
+{""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""yellow"", ""color2"": ""blue"", ""lightness"": 30}}
+</tool_call>",0.32267237501218915,606,152,471.06604646356266,,,,,,,2026-04-30T21:53:00.968607+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""calculate_density"", ""arguments"": {""mass"": 10, ""volume"": 2}}, {""name"": ""calculate_density"", ""arguments"": {""mass"": 5, ""volume"": 1, ""unit"": ""g/cm³""}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""red"", ""color2"": ""blue"", ""lightness"": 70}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": ""yellow"", ""color2"": ""blue"", ""lightness"": 30}}]","[{""name"": ""calculate_density"", ""arguments"": {""mass"": [10], ""volume"": [2], ""unit"": [""kg/m³"", ""kilograms per cubic meter"", """"]}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": [""red""], ""color2"": [""blue""], ""lightness"": [70]}}, {""name"": ""calculate_density"", ""arguments"": {""mass"": [5], ""volume"": [1], ""unit"": [""g/cm³"", ""grams per cubic centimeter""]}}, {""name"": ""mix_paint_color"", ""arguments"": {""color1"": [""yellow""], ""color2"": [""blue""], ""lightness"": [30]}}]",correct
+parallel_multiple_170,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""create_player_profile"", ""arguments"": {""player_name"": ""DragonSlayer"", ""class_type"": ""Warrior"", ""starting_level"": 5}}
+</tool_call>
+
+<tool_call>
+{""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""New York, NY"", ""genre"": ""Rock""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_slope_gradient"", ""arguments"": {""point1"": ""[40.7128, -74.0060]"", ""point2"": ""[34.0522, -118.2437]"", ""unit"": ""degree""}}
+</tool_call>",0.33151216607075185,961,171,515.8181735131401,,,,,,,2026-04-30T21:53:02.297321+00:00,False,"argument_mismatch: Argument mismatch for 'point1': predicted [40.7128, -74.0060], gold [[40.7128, -74.006]].","[{""name"": ""create_player_profile"", ""arguments"": {""player_name"": ""DragonSlayer"", ""class_type"": ""Warrior"", ""starting_level"": 5}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": ""New York, NY"", ""genre"": ""Rock""}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}, {""name"": ""calculate_slope_gradient"", ""arguments"": {""point1"": ""[40.7128, -74.0060]"", ""point2"": ""[34.0522, -118.2437]"", ""unit"": ""degree""}}]","[{""name"": ""create_player_profile"", ""arguments"": {""player_name"": [""DragonSlayer""], ""class_type"": [""Warrior""], ""starting_level"": [5]}}, {""name"": ""concert.find_nearby"", ""arguments"": {""location"": [""New York, NY"", ""NY"", ""New York""], ""genre"": [""Rock""]}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": [52], ""hand_size"": [5]}}, {""name"": ""calculate_slope_gradient"", ""arguments"": {""point1"": [[40.7128, -74.006]], ""point2"": [[34.0522, -118.2437]], ""unit"": [""degree"", """"]}}]",argument_mismatch
+parallel_multiple_22,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""sales_growth.calculate"", ""arguments"": {""company"": ""XYZ"", ""years"": 3}}
+</tool_call>
+
+<tool_call>
+{""name"": ""financial_ratios.interest_coverage"", ""arguments"": {""company_name"": ""XYZ"", ""years"": 3}}
+</tool_call>",0.21584729198366404,516,67,310.40463553775214,,,,,,,2026-04-30T21:53:03.644894+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""sales_growth.calculate"", ""arguments"": {""company"": ""XYZ"", ""years"": 3}}, {""name"": ""financial_ratios.interest_coverage"", ""arguments"": {""company_name"": ""XYZ"", ""years"": 3}}]","[{""name"": ""financial_ratios.interest_coverage"", ""arguments"": {""company_name"": [""XYZ""], ""years"": [3]}}, {""name"": ""sales_growth.calculate"", ""arguments"": {""company"": [""XYZ""], ""years"": [3]}}]",correct
+parallel_multiple_24,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""investment.invest"", ""arguments"": {""company"": ""Google"", ""amount"": 2000}}
+</tool_call>
+
+<tool_call>
+{""name"": ""investment.withdraw"", ""arguments"": {""company"": ""Apple"", ""amount"": 1000}}
+</tool_call>",0.3175998750375584,358,65,204.66003014740892,,,,,,,2026-04-30T21:53:04.867344+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""investment.invest"", ""arguments"": {""company"": ""Google"", ""amount"": 2000}}, {""name"": ""investment.withdraw"", ""arguments"": {""company"": ""Apple"", ""amount"": 1000}}]","[{""name"": ""investment.invest"", ""arguments"": {""company"": [""Google"", ""GOOG""], ""amount"": [2000.0]}}, {""name"": ""investment.withdraw"", ""arguments"": {""company"": [""Apple"", ""AAPL""], ""amount"": [1000.0]}}]",correct
+parallel_multiple_5,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""gcd"", ""arguments"": {""num1"": 96, ""num2"": 128}}
+</tool_call>
+
+<tool_call>
+{""name"": ""lcm"", ""arguments"": {""num1"": 15, ""num2"": 25}}
+</tool_call>",0.2704626249615103,483,64,236.63158637578067,,,,,,,2026-04-30T21:53:06.191446+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""gcd"", ""arguments"": {""num1"": 96, ""num2"": 128}}, {""name"": ""lcm"", ""arguments"": {""num1"": 15, ""num2"": 25}}]","[{""name"": ""gcd"", ""arguments"": {""num1"": [96], ""num2"": [128]}}, {""name"": ""lcm"", ""arguments"": {""num1"": [15], ""num2"": [25]}}]",correct
+parallel_multiple_23,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""financial_ratio.net_profit_margin"", ""arguments"": {""net_income"": 20000, ""total_revenue"": 100000}}
+</tool_call>
+
+<tool_call>
+{""name"": ""financial_ratio.debt_ratio"", ""arguments"": {""total_liabilities"": 10000, ""total_assets"": 30000}}
+</tool_call>",0.20916845800820738,422,77,368.1243373557722,,,,,,,2026-04-30T21:53:07.468438+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""financial_ratio.net_profit_margin"", ""arguments"": {""net_income"": 20000, ""total_revenue"": 100000}}, {""name"": ""financial_ratio.debt_ratio"", ""arguments"": {""total_liabilities"": 10000, ""total_assets"": 30000}}]","[{""name"": ""financial_ratio.net_profit_margin"", ""arguments"": {""net_income"": [20000], ""total_revenue"": [100000]}}, {""name"": ""financial_ratio.debt_ratio"", ""arguments"": {""total_liabilities"": [10000], ""total_assets"": [30000]}}]",correct
+parallel_multiple_106,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""Palo Alto"", ""time_period"": ""weekday""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""calculate_distance"", ""arguments"": {""start_point"": ""San Francisco"", ""end_point"": ""Palo Alto""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Palo Alto"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""weather_forecast"", ""arguments"": {""location"": ""Los Angeles"", ""days"": 5}}
+</tool_call>",0.4001507080392912,612,153,382.3559397150355,,,,,,,2026-04-30T21:53:08.680103+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""San Francisco"", ""end_location"": ""Palo Alto"", ""time_period"": ""weekday""}}, {""name"": ""calculate_distance"", ""arguments"": {""start_point"": ""San Francisco"", ""end_point"": ""Palo Alto""}}, {""name"": ""traffic_estimate"", ""arguments"": {""start_location"": ""Palo Alto"", ""end_location"": ""Los Angeles"", ""time_period"": ""weekend""}}, {""name"": ""weather_forecast"", ""arguments"": {""location"": ""Los Angeles"", ""days"": 5}}]","[{""name"": ""traffic_estimate"", ""arguments"": {""start_location"": [""San Francisco"", ""SF""], ""end_location"": [""Palo Alto""], ""time_period"": [""weekday""]}}, {""name"": ""calculate_distance"", ""arguments"": {""start_point"": [""San Francisco"", ""SF""], ""end_point"": [""Palo Alto""]}}, {""name"": ""traffic_estimate"", ""arguments"": {""start_location"": [""Palo Alto""], ""end_location"": [""Los Angeles"", ""LA""], ""time_period"": [""weekend""]}}, {""name"": ""weather_forecast"", ""arguments"": {""location"": [""Los Angeles"", ""LA""], ""days"": [5]}}]",correct
+parallel_multiple_98,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""currency_conversion"", ""arguments"": {""amount"": ""5000"", ""from_currency"": ""JPY"", ""to_currency"": ""USD""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""unit_conversion"", ""arguments"": {""value"": ""15"", ""from_unit"": ""kilometers"", ""to_unit"": ""miles""}}
+</tool_call>",0.299551457981579,470,81,270.40429229017843,,,,,,,2026-04-30T21:53:10.086622+00:00,False,"argument_mismatch: Argument mismatch for 'amount': predicted 5000, gold [5000.0].","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": ""5000"", ""from_currency"": ""JPY"", ""to_currency"": ""USD""}}, {""name"": ""unit_conversion"", ""arguments"": {""value"": ""15"", ""from_unit"": ""kilometers"", ""to_unit"": ""miles""}}]","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": [5000.0], ""from_currency"": [""Japanese Yen"", ""JPY""], ""to_currency"": [""US Dollars"", ""USD"", ""US Dollar""]}}, {""name"": ""unit_conversion"", ""arguments"": {""value"": [15.0], ""from_unit"": [""km"", ""kilometer"", ""kilometers""], ""to_unit"": [""mi"", ""mile"", ""miles""]}}]",argument_mismatch
+parallel_multiple_156,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""run_two_sample_ttest"", ""arguments"": {""group1"": ""[12, 15, 18, 22, 25]"", ""group2"": ""[20, 23, 26, 29, 32]"", ""equal_variance"": ""true""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""restaurant_search.find_closest"", ""arguments"": {""location"": ""Boston, MA"", ""cuisine"": ""Sushi"", ""amenities"": ""['Patio', 'Wi-Fi']""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""get_personality_traits"", ""arguments"": {""hobby"": ""painting"", ""trait_count"": ""5""}}
+</tool_call>",0.35244945902377367,783,153,434.10479455347877,,,,,,,2026-04-30T21:53:11.392290+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""run_two_sample_ttest"", ""arguments"": {""group1"": ""[12, 15, 18, 22, 25]"", ""group2"": ""[20, 23, 26, 29, 32]"", ""equal_variance"": ""true""}}, {""name"": ""restaurant_search.find_closest"", ""arguments"": {""location"": ""Boston, MA"", ""cuisine"": ""Sushi"", ""amenities"": ""['Patio', 'Wi-Fi']""}}, {""name"": ""get_personality_traits"", ""arguments"": {""hobby"": ""painting"", ""trait_count"": ""5""}}]","[{""name"": ""run_two_sample_ttest"", ""arguments"": {""group1"": [[12, 15, 18, 22, 25]], ""group2"": [[20, 23, 26, 29, 32]], ""equal_variance"": [true, """"]}}, {""name"": ""restaurant_search.find_closest"", ""arguments"": {""location"": [""Boston, MA"", ""Boston,MA"", ""Boston"", ""MA""], ""cuisine"": [""Sushi""], ""amenities"": [[""Patio"", ""Wi-Fi""], [""Patio""], [""Wi-Fi""]]}}, {""name"": ""get_personality_traits"", ""arguments"": {""hobby"": [""painting""], ""trait_count"": [5, """"]}}]",correct
+parallel_multiple_184,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B1234"", ""floors"": ""[1, 2, 3, 4]"", ""mode"": ""dynamic""}}
+</tool_call>
+<tool_call>
+{""name"": ""player_statistic"", ""arguments"": {""player_name"": ""Michael Jordan"", ""year"": 1996}}
+</tool_call>
+<tool_call>
+{""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B5678"", ""floors"": ""[5, 6, 7, 8]"", ""mode"": ""static""}}
+</tool_call>
+<tool_call>
+{""name"": ""player_statistic"", ""arguments"": {""player_name"": ""LeBron James"", ""year"": 2018, ""team_name"": ""Los Angeles Lakers""}}
+</tool_call>",0.31737391592469066,580,177,557.7017868160285,,,,,,,2026-04-30T21:53:12.753296+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B1234"", ""floors"": ""[1, 2, 3, 4]"", ""mode"": ""dynamic""}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": ""Michael Jordan"", ""year"": 1996}}, {""name"": ""analyze_structure"", ""arguments"": {""building_id"": ""B5678"", ""floors"": ""[5, 6, 7, 8]"", ""mode"": ""static""}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": ""LeBron James"", ""year"": 2018, ""team_name"": ""Los Angeles Lakers""}}]","[{""name"": ""analyze_structure"", ""arguments"": {""building_id"": [""B1234""], ""floors"": [[1, 2, 3, 4]], ""mode"": [""dynamic""]}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": [""Michael Jordan""], ""year"": [1996], ""team_name"": [""""]}}, {""name"": ""analyze_structure"", ""arguments"": {""building_id"": [""B5678""], ""floors"": [[5, 6, 7, 8]], ""mode"": [""static"", """"]}}, {""name"": ""player_statistic"", ""arguments"": {""player_name"": [""LeBron James""], ""year"": [2018], ""team_name"": [""Los Angeles Lakers"", ""Lakers""]}}]",correct
+parallel_multiple_123,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}
+</tool_call>
+<tool_call>
+{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}
+</tool_call>
+<tool_call>
+{""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}
+</tool_call>
+<tool_call>
+{""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}
+</tool_call>",0.3284938749857247,564,185,563.1764062816682,,,,,,,2026-04-30T21:53:14.076876+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}, {""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2019, ""platform"": ""Playstation""}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": ""Call of Duty: Modern Warfare"", ""year"": 2020, ""platform"": ""PC""}}]","[{""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2019], ""platform"": [""Playstation"", ""PS""]}}, {""name"": ""video_games.get_player_count"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2020], ""platform"": [""PC"", ""Personal Computer""]}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2019], ""platform"": [""Playstation"", ""PS""]}}, {""name"": ""video_games.get_sales"", ""arguments"": {""game_title"": [""Call of Duty: Modern Warfare""], ""year"": [2020], ""platform"": [""PC"", ""Personal Computer""]}}]",correct
+parallel_multiple_57,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""hotel.find"", ""arguments"": {""location"": ""Paris, France"", ""stars"": ""4"", ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}
+</tool_call>
+
+<tool_call>
+{""name"": ""hotel.find"", ""arguments"": {""location"": ""New York, USA"", ""stars"": ""4"", ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}
+</tool_call>",0.288114833063446,560,102,354.0255075223375,,,,,,,2026-04-30T21:53:15.412116+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""hotel.find"", ""arguments"": {""location"": ""Paris, France"", ""stars"": ""4"", ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}, {""name"": ""hotel.find"", ""arguments"": {""location"": ""New York, USA"", ""stars"": ""4"", ""amenities"": [""Free WiFi"", ""Breakfast Included"", ""Gym""]}}]","[{""name"": ""hotel.find"", ""arguments"": {""location"": [""Paris"", ""Paris, France"", ""France""], ""stars"": [4], ""amenities"": [[""Free WiFi"", ""Breakfast Included"", ""Gym""]]}}, {""name"": ""hotel.find"", ""arguments"": {""location"": [""New York"", ""New York, USA"", ""NY"", ""NY, USA"", ""USA""], ""stars"": [4], ""amenities"": [[""Free WiFi"", ""Breakfast Included"", ""Gym""]]}}]",correct
+parallel_multiple_80,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""functions.intersect"", ""arguments"": {""function1"": ""4x+7"", ""function2"": ""2x+5""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""functions.zero"", ""arguments"": {""function"": ""3x+9""}}
+</tool_call>",0.27990795799996704,432,67,239.36439849276414,,,,,,,2026-04-30T21:53:16.708083+00:00,False,"argument_mismatch: Argument mismatch for 'function1': predicted 4x+7, gold ['4x + 7', 'lambda x: 4x + 7'].","[{""name"": ""functions.intersect"", ""arguments"": {""function1"": ""4x+7"", ""function2"": ""2x+5""}}, {""name"": ""functions.zero"", ""arguments"": {""function"": ""3x+9""}}]","[{""name"": ""functions.intersect"", ""arguments"": {""function1"": [""4x + 7"", ""lambda x: 4x + 7""], ""function2"": [""2x + 5"", ""lambda x: 2x + 5""]}}, {""name"": ""functions.zero"", ""arguments"": {""function"": [""3x + 9"", ""lambda x: 3x + 9""]}}]",argument_mismatch
+parallel_multiple_192,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""main course"", ""time"": 45}}
+</tool_call>
+
+<tool_call>
+{""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}
+</tool_call>
+
+<tool_call>
+{""name"": ""hospital.locate"", ""arguments"": {""location"": ""Denver, CO"", ""radius"": 10, ""department"": ""Emergency""}}
+</tool_call>",0.2625568750081584,718,117,445.6177351911447,,,,,,,2026-04-30T21:53:17.994054+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": ""vegan"", ""recipe_type"": ""main course"", ""time"": 45}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": 52, ""hand_size"": 5}}, {""name"": ""hospital.locate"", ""arguments"": {""location"": ""Denver, CO"", ""radius"": 10, ""department"": ""Emergency""}}]","[{""name"": ""find_recipe"", ""arguments"": {""dietary_restrictions"": [""vegan""], ""recipe_type"": [""main course""], ""time"": [45]}}, {""name"": ""poker_probability.full_house"", ""arguments"": {""deck_size"": [52], ""hand_size"": [5]}}, {""name"": ""hospital.locate"", ""arguments"": {""location"": [""Denver, CO"", ""Denver"", ""CO""], ""radius"": [10], ""department"": [""Emergency""]}}]",correct
+parallel_multiple_120,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""soccer_scores.get_scores"", ""arguments"": {""team"": ""Manchester United"", ""league"": ""English Premier League"", ""rounds"": 5}}
+</tool_call>
+
+<tool_call>
+{""name"": ""basketball_scores.get_scores"", ""arguments"": {""team"": ""Los Angeles Lakers"", ""league"": ""NBA"", ""rounds"": 7}}
+</tool_call>",0.2962177499430254,485,87,293.70285884871384,,,,,,,2026-04-30T21:53:19.262727+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""soccer_scores.get_scores"", ""arguments"": {""team"": ""Manchester United"", ""league"": ""English Premier League"", ""rounds"": 5}}, {""name"": ""basketball_scores.get_scores"", ""arguments"": {""team"": ""Los Angeles Lakers"", ""league"": ""NBA"", ""rounds"": 7}}]","[{""name"": ""soccer_scores.get_scores"", ""arguments"": {""team"": [""Manchester United""], ""league"": [""English Premier League"", ""EPL""], ""rounds"": [5]}}, {""name"": ""basketball_scores.get_scores"", ""arguments"": {""team"": [""Los Angeles Lakers"", ""Lakers""], ""league"": [""NBA"", ""National Basketball Association""], ""rounds"": [7]}}]",correct
+parallel_multiple_18,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""currency_conversion"", ""arguments"": {""amount"": ""10"", ""from_currency"": ""USD"", ""to_currency"": ""EUR""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""banking_service"", ""arguments"": {""account_id"": ""987654"", ""amount"": ""10""}}
+</tool_call>",0.20050616597291082,391,72,359.09120126374313,,,,,,,2026-04-30T21:53:20.565426+00:00,False,"argument_mismatch: Argument mismatch for 'amount': predicted 10, gold [10.0].","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": ""10"", ""from_currency"": ""USD"", ""to_currency"": ""EUR""}}, {""name"": ""banking_service"", ""arguments"": {""account_id"": ""987654"", ""amount"": ""10""}}]","[{""name"": ""currency_conversion"", ""arguments"": {""amount"": [10.0], ""from_currency"": [""USD"", ""United States Dollar""], ""to_currency"": [""EUR"", ""Euro""]}}, {""name"": ""banking_service"", ""arguments"": {""account_id"": [""987654""], ""amount"": [10.0]}}]",argument_mismatch
+parallel_multiple_38,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": ""1900""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""us_history.gdp"", ""arguments"": {""year"": ""1900""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": ""1950""}}
+</tool_call>
+
+<tool_call>
+{""name"": ""us_history.gdp"", ""arguments"": {""year"": ""1950""}}
+</tool_call>",0.3111113749910146,338,111,356.7854116655357,,,,,,,2026-04-30T21:53:21.772726+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": ""1900""}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": ""1900""}}, {""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": ""1950""}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": ""1950""}}]","[{""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": [1900]}}, {""name"": ""us_history.life_expectancy"", ""arguments"": {""year"": [1950]}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": [1900]}}, {""name"": ""us_history.gdp"", ""arguments"": {""year"": [1950]}}]",correct
+parallel_multiple_95,parallel_multiple,Cerebras_WSE,llama3.1-8b,cerebras_api,0,"<tool_call>
+{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": ""[1, 2, 3]"", ""vector2"": ""[4, 5, 6]"", ""rounding"": ""2""}}
+</tool_call>
+<tool_call>
+{""name"": ""correlation.calculate"", ""arguments"": {""array1"": ""[7, 8, 9]"", ""array2"": ""[10, 11, 12]"", ""type"": ""pearson""}}
+</tool_call>
+<tool_call>
+{""name"": ""correlation.calculate"", ""arguments"": {""array1"": ""[13, 14, 15]"", ""array2"": ""[16, 17, 18]"", ""type"": ""spearman""}}
+</tool_call>
+<tool_call>
+{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": ""[19, 20, 21]"", ""vector2"": ""[22, 23, 24]"", ""rounding"": ""3""}}
+</tool_call>",0.32179987500421703,693,212,658.7945380563676,,,,,,,2026-04-30T21:53:23.090559+00:00,True,correct: Predicted calls match gold function names and required arguments.,"[{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": ""[1, 2, 3]"", ""vector2"": ""[4, 5, 6]"", ""rounding"": ""2""}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": ""[7, 8, 9]"", ""array2"": ""[10, 11, 12]"", ""type"": ""pearson""}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": ""[13, 14, 15]"", ""array2"": ""[16, 17, 18]"", ""type"": ""spearman""}}, {""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": ""[19, 20, 21]"", ""vector2"": ""[22, 23, 24]"", ""rounding"": ""3""}}]","[{""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [[1, 2, 3]], ""vector2"": [[4, 5, 6]], ""rounding"": [2]}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": [[7, 8, 9]], ""array2"": [[10, 11, 12]], ""type"": [""pearson"", """"]}}, {""name"": ""correlation.calculate"", ""arguments"": {""array1"": [[13, 14, 15]], ""array2"": [[16, 17, 18]], ""type"": [""spearman""]}}, {""name"": ""cosine_similarity.calculate"", ""arguments"": {""vector1"": [[19, 20, 21]], ""vector2"": [[22, 23, 24]], ""rounding"": [3]}}]",correct

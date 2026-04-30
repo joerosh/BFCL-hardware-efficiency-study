@@ -1,0 +1,7 @@
+category,failure_type,count
+multiple,argument_mismatch,2
+parallel,argument_mismatch,3
+parallel,wrong_call_count,3
+parallel,parse_failure,1
+parallel_multiple,argument_mismatch,4
+simple,argument_mismatch,5
