@@ -1,0 +1,8 @@
+{
+    "hardware": "Cerebras_WSE",
+    "backend": "cerebras_api",
+    "model_name": "llama3.1-8b",
+    "temperature": 0.0,
+    "max_new_tokens": 512,
+    "notes": "Cerebras wafer-scale engine cloud API. Llama-3.1-8B."
+}

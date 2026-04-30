@@ -1,0 +1,10 @@
+{
+    "hardware": "RTX6000Ada_Llama",
+    "backend": "transformers_gpu",
+    "model_name": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+    "temperature": 0.0,
+    "max_new_tokens": 512,
+    "do_sample": false,
+    "load_in_8bit": false,
+    "notes": "RTX 6000 Ada 48GB via school Jupyter server. Llama-3.1-8B float16."
+}
