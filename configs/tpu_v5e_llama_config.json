@@ -1,5 +1,5 @@
 {
-  "hardware": "TPU_v5e_Llama",
+  "hardware": "TPU_v3_Llama",
   "backend": "transformers_xla",
   "model_name": "NousResearch/Meta-Llama-3.1-8B-Instruct",
   "temperature": 0.0,
@@ -9,5 +9,5 @@
   "dtype": "bfloat16",
   "pad_to_max_length": true,
   "max_input_length": 1024,
-  "notes": "TPU v5e via Google Colab. PyTorch/XLA backend. Warmup excluded from timing."
+  "notes": "TPU v3-8 via Kaggle. PyTorch/XLA backend. Single core. Warmup excluded from timing."
 }
